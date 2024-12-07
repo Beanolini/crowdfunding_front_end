@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import useAuth from "../hooks/use-auth.js";
+import { useAuth } from "../hooks/use-auth.js";
 
 function NavBar() {
   const { auth, setAuth } = useAuth();
@@ -15,12 +15,13 @@ function NavBar() {
     <div>
       <nav>
         <Link to="/">Home</Link>
+        <Link to="/newproject">NewProject</Link>
         {auth.token ? (
           <Link to="/" onClick={handleLogout}>
             Log Out
           </Link>
         ) : (
-          <Link to="/login">Login</Link>
+          <Link to="/login">LogIn</Link>
         )}
       </nav>
       <Outlet />
