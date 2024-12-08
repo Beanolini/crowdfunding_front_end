@@ -16,6 +16,7 @@ function NavBar() {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/newproject">NewProject</Link>
+        <Link to="/pledgepage">PledgePage</Link>
         {auth.token ? (
           <Link to="/" onClick={handleLogout}>
             Log Out

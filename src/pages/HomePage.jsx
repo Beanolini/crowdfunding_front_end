@@ -2,7 +2,6 @@ import { allProjects } from "../data";
 import ProjectCard from "../components/ProjectCard";
 import "./HomePage.css";
 
-
 function HomePage() {
   return (
     <div id="project-list">
