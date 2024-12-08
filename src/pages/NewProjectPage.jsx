@@ -1,7 +1,7 @@
 import NewProjectForm from "../components/NewProjectForm";
 
 function NewProjectPage() {
-  return <NewProjectForm /> 
+  return <NewProjectForm />;
 }
 
 export default NewProjectPage;
