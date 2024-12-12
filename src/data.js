@@ -1,8 +1,16 @@
 import halflingOne from "./images/halfling-one.jpg";
+import halflingTwo from "./images/halfling-two.jpg";
+import halflingThree from "./images/halfling-three.jpg";
+import halflingFour from "./images/halfling-four.jpg";
+import halflingFive from "./images/halfling-five.jpg";
+import halflingSix from "./images/halfling-six.jpg";
+import halflingSeven from "./images/halfling-seven.jpg";
+
+
 export const allProjects = [
   {
     id: 1,
-    title: "Halfling One",
+    title: "Gowrick Greatflower",
     description: "The first project.",
     goal: 150,
     image: halflingOne,
@@ -12,60 +20,60 @@ export const allProjects = [
   },
   {
     id: 2,
-    title: "Halfling Two",
+    title: "Anyas Nightsun",
     description: "The second project.",
     goal: 150,
-    image: "https://via.placeholder.com/300.jpg",
+    image: halflingTwo,
     is_open: true,
     date_created: "2020-03-20T18:28:23.382748Z",
     owner: 1,
   },
   {
     id: 3,
-    title: "Halfling Three",
+    title: "Kasumo Sunmeadow",
     description: "The third project.",
     goal: 150,
-    image: "https://via.placeholder.com/300.jpg",
+    image: halflingThree,
     is_open: true,
     date_created: "2020-02-20T14:28:23.382748Z",
     owner: 1,
   },
   {
     id: 4,
-    title: "Halfling Four",
+    title: "Roslyse Nimbleflow",
     description: "The fourth project.",
     goal: 150,
-    image: "https://via.placeholder.com/300.jpg",
+    image: halflingFour,
     is_open: true,
     date_created: "2020-03-20T14:28:23.382748Z",
     owner: 2,
   },
   {
     id: 5,
-    title: "Halfling Five",
+    title: "Hanys Teafoot",
     description: "The fifth project.",
     goal: 150,
-    image: "https://via.placeholder.com/300.jpg",
+    image: halflingFive,
     is_open: true,
     date_created: "2019-03-20T12:28:23.382748Z",
     owner: 2,
   },
   {
     id: 6,
-    title: "Halfling Six",
+    title: "Antran Shadowspell",
     description: "The sixth project.",
     goal: 150,
-    image: "https://via.placeholder.com/300.jpg",
+    image: halflingSix,
     is_open: true,
     date_created: "2020-03-20T14:28:23.382748Z",
     owner: 1,
   },
   {
     id: 7,
-    title: "Halfling Seven",
+    title: "Prulile Wisespark",
     description: "The seventh project.",
     goal: 150,
-    image: "https://via.placeholder.com/300.jpg",
+    image: halflingSeven,
     is_open: true,
     date_created: "2020-02-20T14:28:23.382748Z",
     owner: 2,
