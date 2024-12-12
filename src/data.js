@@ -1,17 +1,18 @@
+import halflingOne from "./images/halfling-one.jpg";
 export const allProjects = [
   {
     id: 1,
-    title: "Project One",
+    title: "Halfling One",
     description: "The first project.",
     goal: 150,
-    image: "https://via.placeholder.com/300.jpg",
+    image: halflingOne,
     is_open: true,
     date_created: "2020-03-20T14:22:23.382748Z",
     owner: 1,
   },
   {
     id: 2,
-    title: "Project Two",
+    title: "Halfling Two",
     description: "The second project.",
     goal: 150,
     image: "https://via.placeholder.com/300.jpg",
@@ -21,7 +22,7 @@ export const allProjects = [
   },
   {
     id: 3,
-    title: "Project Three",
+    title: "Halfling Three",
     description: "The third project.",
     goal: 150,
     image: "https://via.placeholder.com/300.jpg",
@@ -31,7 +32,7 @@ export const allProjects = [
   },
   {
     id: 4,
-    title: "Project Four",
+    title: "Halfling Four",
     description: "The fourth project.",
     goal: 150,
     image: "https://via.placeholder.com/300.jpg",
@@ -41,7 +42,7 @@ export const allProjects = [
   },
   {
     id: 5,
-    title: "Project Five",
+    title: "Halfling Five",
     description: "The fifth project.",
     goal: 150,
     image: "https://via.placeholder.com/300.jpg",
@@ -51,7 +52,7 @@ export const allProjects = [
   },
   {
     id: 6,
-    title: "Project Six",
+    title: "Halfling Six",
     description: "The sixth project.",
     goal: 150,
     image: "https://via.placeholder.com/300.jpg",
@@ -61,7 +62,7 @@ export const allProjects = [
   },
   {
     id: 7,
-    title: "Project Seven",
+    title: "Halfling Seven",
     description: "The seventh project.",
     goal: 150,
     image: "https://via.placeholder.com/300.jpg",

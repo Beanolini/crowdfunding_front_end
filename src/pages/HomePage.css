@@ -3,4 +3,18 @@
   grid-template-columns: 30% 30% 30%;
   column-gap: 10px;
   row-gap: 10px;
+  background-color: cream;
+  font-family: inknut antiqua, handgloves;
 }
+
+#project-list img {
+  width: 300px; /* Adjust the width as needed */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures proper cropping/fitting if needed */
+  margin-top: 40px;
+}
+
+
+
+
+

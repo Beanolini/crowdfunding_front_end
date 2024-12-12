@@ -12,6 +12,7 @@ async function postProject(title, description, goal, image) {
       description: description,
       goal: goal,
       image: image,
+      is_open: true,
     }),
   });
 

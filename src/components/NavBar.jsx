@@ -1,3 +1,4 @@
+import "./NavBar.css";
 import { Link, Outlet } from "react-router-dom";
 import { useAuth } from "../hooks/use-auth.js";
 
