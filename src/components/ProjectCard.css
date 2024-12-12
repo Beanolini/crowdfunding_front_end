@@ -1,11 +1,29 @@
+project-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .project-card {
   width: 100%;
-  border: 1px solid black;
-  box-shadow: 0px 0px 5px gray;
+  border: none;
+  box-shadow: none;
+  text-align: center;
 }
 
 .project-card img {
   width: 100%;
   height: 300px;
   object-fit: cover;
+}
+
+.project-card h3 {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffce1b;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
