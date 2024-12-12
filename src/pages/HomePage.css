@@ -4,17 +4,59 @@
   column-gap: 10px;
   row-gap: 10px;
   background-color: cream;
-  font-family: 'inknut antiqua', 'handgloves';
+  font-family: "inknut antiqua", "handgloves";
 }
 
 #project-list img {
-  width: 300px; 
-  height: auto; 
-  object-fit: cover; 
-  margin-top: 40px;
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 60px;
 }
 
+h1 {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #617457;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+p {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 16px;
+  color: #617457;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
+.header-box {
+  border: 5px solid #617457; /* Greenish border */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Space inside the box */
+  margin: 20px auto; /* Center the box with margin */
+  max-width: 800px; /* Limit the width of the box */
+  background-color: #f9f5eb; /* Light cream background color */
+  position: relative; /* For the decorative leaves */
+  text-align: center;
+}
 
+/* Decorative leaves */
+.header-box::before,
+.header-box::after {
+  content: "🍃"; /* Replace with an image URL if preferred */
+  font-size: 24px;
+  color: #617457; /* Leaf color */
+  position: absolute;
+  top: -15px; /* Position the leaves */
+  transform: rotate(-15deg);
+}
 
+.header-box::before {
+  left: 10px; /* Left leaf */
+}
+
+.header-box::after {
+  right: 10px; /* Right leaf */
+}

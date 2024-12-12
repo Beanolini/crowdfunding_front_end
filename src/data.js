@@ -6,7 +6,6 @@ import halflingFive from "./images/halfling-five.jpg";
 import halflingSix from "./images/halfling-six.jpg";
 import halflingSeven from "./images/halfling-seven.jpg";
 
-
 export const allProjects = [
   {
     id: 1,
@@ -70,7 +69,7 @@ export const allProjects = [
   },
   {
     id: 7,
-    title: "Prulile Wisespark",
+    title: "Zefara Bronzetopple",
     description: "The seventh project.",
     goal: 150,
     image: halflingSeven,

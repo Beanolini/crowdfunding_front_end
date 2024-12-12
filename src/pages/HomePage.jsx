@@ -4,10 +4,16 @@ import "./HomePage.css";
 
 function HomePage() {
   return (
-    <div id="project-list">
-      {allProjects.map((projectData, key) => {
-        return <ProjectCard key={key} projectData={projectData} />;
-      })}
+    <div>
+    <div className="header-box">
+      <h1>Help a Halfling</h1>
+      <p>Little Folk. Big Dreams.</p>
+    </div>
+      <div id="project-list">
+        {allProjects.map((projectData, key) => {
+          return <ProjectCard key={key} projectData={projectData} />;
+        })}
+      </div>
     </div>
   );
 }

@@ -1,10 +1,11 @@
-/* General styling for the NavBar container */
 nav {
-  background-color: pink;
+  background-color: #ffce1b;
   padding: 10px 20px;
+  margin: 40px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 10px;
 }
 
 /* Styling for the links */
