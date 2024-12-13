@@ -1,0 +1,45 @@
+/* LoginForm.css */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Make inputs and buttons take the full width of the form */
+  width: 100%;
+}
+
+form div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+form button {
+  background-color: #617457; /* Green background for the button */
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%; /* Ensure button fills the full width of the form */
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #506340; /* Darker green on hover */
+}
+

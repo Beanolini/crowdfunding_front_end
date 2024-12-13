@@ -1,29 +1,42 @@
-project-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 .project-card {
   width: 100%;
-  border: none;
+  border-radius: 15px;
   box-shadow: none;
   text-align: center;
+  overflow: hidden; /* Ensures content inside the card respects the rounded borders */
 }
 
 .project-card img {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border-radius: 15px; /* Rounds the corners of the image */
 }
 
 .project-card h3 {
   font-family: "Inknut Antiqua", serif;
   font-size: 18px;
   font-weight: bold;
-  color: #ffce1b;
+  color: #e39a7b;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  /* Adjust the text-shadow to make it more pronounced */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); /* Increased shadow length and opacity */
+
+  /* Increase padding to create more space around the text */
+  padding: 10px 15px; /* Adds more space around the text inside the background */
+
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Darker semi-transparent black background for contrast */
+  color: white; /* White text for better contrast */
+  border-radius: 5px; /* Rounded corners for the text background */
+
+  display: inline-block; /* Makes the text box fit the width of the text */
+  max-width: 100%; /* Prevents the text box from exceeding the image width */
+  box-sizing: border-box; /* Ensures padding doesn’t exceed the width */
 }

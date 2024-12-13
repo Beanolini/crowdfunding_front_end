@@ -1,0 +1,83 @@
+/* ContactPage.css */
+.header-box {
+  border: 5px solid #617457; /* Same green border color as AboutPage */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  margin: 20px auto; /* Center the box with margin */
+  max-width: 800px; /* Limit the width */
+  background-color: #f9f5eb; /* Light background color */
+  position: relative; /* Optional, similar to AboutPage */
+  text-align: center; /* Center text */
+}
+
+h1 {
+  font-family: "inknut antiqua", serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #617457;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "inknut antiqua", serif;
+  font-size: 18px;
+  color: #617457;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.contact-form {
+  padding: 20px;
+  background-color: rgba(249, 245, 235, 0.9); /* Slightly transparent background */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 20px; /* Space between header and form */
+  border: none; /* No border for the form */
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+  text-align: left; /* Left-align the labels */
+}
+
+.form-group label {
+  font-family: "inknut antiqua", serif;
+  font-size: 16px;
+  color: #617457;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #617457;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+/* Submit Button Styling */
+.submit-btn {
+  background-color: #617457;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #dbb06b;
+}
+

@@ -1,38 +1,60 @@
+/* -------------------- Global Styles -------------------- */
+div {
+  font-family: "Inknut Antiqua", "Handgloves", serif; /* Set default font for content */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------- Nav Bar Styling -------------------- */
 nav {
-  background-color: #ffce1b;
+  background-color: #ffd3ac; /* Light peach background */
   padding: 10px 20px;
   margin: 40px 0;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 10px;
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: center; /* Center items vertically */
+  border-radius: 10px; /* Rounded corners */
 }
 
-/* Styling for the links */
+/* -------------------- Link Styling -------------------- */
 nav a {
   color: white; /* White text for contrast */
   text-decoration: none; /* Remove underlines */
   font-size: 18px;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px; /* Increased padding for more spacing */
+  border-radius: 10px; /* Rounded corners for links */
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+  display: flex; /* Allow the icon and text to align properly */
+  align-items: center; /* Center the icon and text vertically */
 }
 
-/* Hover effect for links */
+/* -------------------- Icon Styling -------------------- */
+.nav-icon {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.nav-icon:hover {
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+  transition: transform 0.2s ease-in-out; /* Smooth animation */
+}
+
+/* -------------------- Hover Effect (Shadow Box) -------------------- */
 nav a:hover {
-  background-color: #575757; /* Slightly lighter shade for hover */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow with more depth */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Slightly darkened background on hover */
+  transform: scale(1.05); /* Slightly scale the link to make it pop */
 }
 
-/* Active or focused link styling */
+/* -------------------- Active Link Styling -------------------- */
 nav a:active {
   background-color: #444; /* Darker shade for active state */
-}
-
-/* Additional styling for the container wrapping Outlet */
-div {
-  font-family: inknut antiqua, handgloves; /* Set default font for content */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }

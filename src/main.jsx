@@ -2,24 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// Here we import out pages
+// Import Pages
 import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import NewProjectPage from "./pages/NewProjectPage.jsx";
 import PledgePage from "./pages/PledgePage.jsx";
+import ProjectPage from "./pages/ProjectPage.jsx"; // Import the ProjectPage
 
-// Here we import our components
+// Import Components
 import NavBar from "./components/NavBar.jsx";
 import { AuthProvider } from "./components/AuthProvider.jsx";
 
-// Here we create our router and tell it whats pages to render at what path
+// Create the router
 const router = createBrowserRouter([
-  // These are the three routes!
   {
     path: "/",
-    // Putting our NavBar as the main component will causes the children to render in the <Outlet />
     element: <NavBar />,
     children: [
       { path: "/", element: <HomePage /> },
@@ -28,13 +27,13 @@ const router = createBrowserRouter([
       { path: "/contact", element: <ContactPage /> },
       { path: "/newproject", element: <NewProjectPage /> },
       { path: "/pledgepage", element: <PledgePage /> },
+      { path: "/project/:id", element: <ProjectPage /> }, // Add dynamic project route
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* Here we wrap our app in the router provider so the pages render */}
     <AuthProvider>
       <RouterProvider router={router} />
     </AuthProvider>

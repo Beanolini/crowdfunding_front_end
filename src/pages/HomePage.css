@@ -1,10 +1,18 @@
+body {
+  background-image: url("../images/background-2.jpg");
+  background-size: cover; /* Ensures the image covers the whole screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  background-attachment: fixed; /* Fixed background for better scroll effects */
+}
+
 #project-list {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   column-gap: 10px;
   row-gap: 10px;
-  background-color: cream;
-  font-family: "inknut antiqua", "handgloves";
+  font-family: "inknut antiqua", serif;
 }
 
 #project-list img {
@@ -15,7 +23,7 @@
 }
 
 h1 {
-  font-family: "Inknut Antiqua", serif;
+  font-family: "inknut antiqua", serif;
   font-size: 36px;
   font-weight: bold;
   color: #617457;
@@ -24,33 +32,23 @@ h1 {
 }
 
 p {
-  font-family: "Inknut Antiqua", serif;
+  font-family: "inknut antiqua", serif;
   font-size: 16px;
-  color: #617457;
+  color: #dbb06b;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px; /* Reduce space below <p> */
 }
+
 
 .header-box {
-  border: 5px solid #617457; /* Greenish border */
-  border-radius: 15px; /* Rounded corners */
-  padding: 20px; /* Space inside the box */
-  margin: 20px auto; /* Center the box with margin */
-  max-width: 800px; /* Limit the width of the box */
-  background-color: #f9f5eb; /* Light cream background color */
-  position: relative; /* For the decorative leaves */
+  border: 5px solid #617457;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f5eb;
+  position: relative;
   text-align: center;
-}
-
-/* Decorative leaves */
-.header-box::before,
-.header-box::after {
-  content: "🍃"; /* Replace with an image URL if preferred */
-  font-size: 24px;
-  color: #617457; /* Leaf color */
-  position: absolute;
-  top: -15px; /* Position the leaves */
-  transform: rotate(-15deg);
 }
 
 .header-box::before {
@@ -59,4 +57,15 @@ p {
 
 .header-box::after {
   right: 10px; /* Right leaf */
+}
+
+.header-box .nav-icon {
+  width: 50px; /* Larger size */
+  height: 50px;
+  margin-top: 5px; /* Decrease margin above the icon */
+  transition: transform 0.2s ease-in-out; /* Smooth hover animation */
+}
+
+.header-box .nav-icon:hover {
+  transform: scale(1.2); /* Slight hover enlargement */
 }

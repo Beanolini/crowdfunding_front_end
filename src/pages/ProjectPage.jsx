@@ -1,21 +1,37 @@
-import { oneProject } from "../data";
+import React from "react";
+import { useParams } from "react-router-dom";
+import { allProjects } from "../Data"; // Import your data
 
 function ProjectPage() {
+  const { id } = useParams(); // Get the project ID from the URL
+
+  // Find the project using the ID
+  const project = allProjects.find((project) => project.id === parseInt(id));
+
+  if (!project) {
+    return <p>Project not found</p>;
+  }
+
   return (
-    <div>
-      <h2>{oneProject.title}</h2>
-      <h3>Created at: {oneProject.date_created}</h3>
-      <h3>{`Status: ${oneProject.is_open}`}</h3>
-      <h3>Pledges:</h3>
-      <ul>
-        {oneProject.pledges.map((pledgeData, key) => {
-          return (
-            <li key={key}>
-              {pledgeData.amount} from {pledgeData.supporter}
-            </li>
-          );
-        })}
-      </ul>
+    <div className="header-box">
+      <h1>{project.title}</h1>
+      <img
+        src={project.image}
+        alt={project.title}
+        style={{ width: "100%", maxWidth: "600px", height: "auto" }}
+      />
+      <p>{project.description}</p>
+      <p>
+        <strong>Goal: </strong>${project.goal}
+      </p>
+      <p>
+        <strong>Status: </strong>
+        {project.is_open ? "Open" : "Closed"}
+      </p>
+      <p>
+        <strong>Created on: </strong>
+        {new Date(project.date_created).toLocaleDateString()}
+      </p>
     </div>
   );
 }
