@@ -36,6 +36,22 @@ p {
   position: relative;
   text-align: center;
   font-family: "inknut antiqua", serif;
+  box-sizing: border-box;
+}
+
+/* Create a New Project Heading */
+.header-box h1 {
+  font-family: "inknut antiqua", serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #617457;
+  text-align: center;
+  margin-bottom: 40px; /* Adjusted spacing to match the Pledge Page */
+}
+
+/* Adjust the spacing for the first input */
+.header-box form div:first-child {
+  margin-top: 20px; /* Additional space between heading and first form field */
 }
 
 /* -------------------- Icon Styling -------------------- */
@@ -50,7 +66,7 @@ p {
   transform: scale(1.2);
 }
 
-/* -------------------- Remove Border Styling From the Form -------------------- */
+/* -------------------- Form Styling -------------------- */
 .header-box form {
   padding: 20px;
   background-color: rgba(
@@ -78,12 +94,12 @@ p {
 }
 
 /* -------------------- Submit Button Styling -------------------- */
-.header-box form input[type="submit"] {
+.header-box form button {
   background-color: #617457; /* Base color */
   color: white;
   cursor: pointer;
   border: none;
-  padding: 15px 30px; /* Increase horizontal padding for a larger button */
+  padding: 15px 30px; /* Increased horizontal padding for a larger button */
   font-size: 18px; /* Slightly larger text */
   font-weight: bold; /* Make text bold for emphasis */
   border-radius: 25px; /* Rounded corners for a modern look */
@@ -94,14 +110,14 @@ p {
 }
 
 /* Hover Effect */
-.header-box form input[type="submit"]:hover {
+.header-box form button:hover {
   background-color: #dbb06b; /* Lighter color on hover */
   transform: translateY(-3px); /* Slight lift effect */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 /* Focus Effect (when the button is clicked or focused) */
-.header-box form input[type="submit"]:focus {
+.header-box form button:focus {
   outline: none; /* Remove default focus outline */
   box-shadow: 0 0 0 3px rgba(94, 167, 94, 0.5); /* Subtle focus ring */
 }

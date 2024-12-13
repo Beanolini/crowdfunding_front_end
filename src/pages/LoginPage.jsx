@@ -1,22 +1,31 @@
 import React from "react";
-import "../components/LoginForm.css"; // Corrected path to LoginForm.css
+import "./LoginPage.css";
 
 function LoginForm() {
   return (
-    <div className="login-form-container">
-      <h1>Login</h1>
-      <form>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <form>
+      <div>
+        <label htmlFor="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter username"
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="password">Password:</label>
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+      <button type="submit">Login</button>
+    </form>
   );
 }
 
 function LoginPage() {
   return (
-    <div>
+    <div className="login-form-container">
+      <h1>Log In</h1>
       <LoginForm />
     </div>
   );
