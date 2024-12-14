@@ -36,7 +36,7 @@ function NewProjectForm() {
         projectDetails.title,
         projectDetails.description,
         projectDetails.goal,
-        projectDetails.image,
+        projectDetails.image
       ).then(() => {
         navigate("/");
       });
