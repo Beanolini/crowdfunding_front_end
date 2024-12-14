@@ -15,7 +15,6 @@ function SignUpForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted: ", formData);
-    // Add logic to send data to your backend or authentication service
   };
 
   return (

@@ -1,13 +1,13 @@
 /* ContactPage.css */
 .header-box {
-  border: 5px solid #617457; /* Same green border color as AboutPage */
-  border-radius: 15px; /* Rounded corners */
-  padding: 20px; /* Padding inside the box */
-  margin: 20px auto; /* Center the box with margin */
-  max-width: 800px; /* Limit the width */
-  background-color: #f9f5eb; /* Light background color */
-  position: relative; /* Optional, similar to AboutPage */
-  text-align: center; /* Center text */
+  border: 5px solid #617457; 
+  border-radius: 15px; 
+  padding: 20px; 
+  margin: 20px auto; 
+  max-width: 800px; 
+  background-color: #f9f5eb; 
+  position: relative;
+  text-align: center; 
 }
 
 h1 {
@@ -27,20 +27,18 @@ p {
   margin-bottom: 30px;
 }
 
-/* Form Styling */
 .contact-form {
   padding: 20px;
-  background-color: rgba(249, 245, 235, 0.9); /* Slightly transparent background */
+  background-color: rgba(249, 245, 235, 0.9); 
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  margin-top: 20px; /* Space between header and form */
-  border: none; /* No border for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-top: 20px; 
+  border: none; 
 }
 
-/* Form Group Styling */
 .form-group {
-  margin-bottom: 20px; /* Space between form groups */
-  text-align: left; /* Left-align the labels */
+  margin-bottom: 20px; 
+  text-align: left; 
 }
 
 .form-group label {
@@ -62,10 +60,9 @@ p {
 }
 
 .form-group textarea {
-  resize: vertical; /* Allow vertical resizing of the textarea */
+  resize: vertical; 
 }
 
-/* Submit Button Styling */
 .submit-btn {
   background-color: #617457;
   color: white;

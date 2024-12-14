@@ -1,12 +1,12 @@
 .header-box {
-  border: 5px solid #617457; /* Same green border color as HomePage */
-  border-radius: 15px; /* Rounded corners */
-  padding: 20px; /* Padding inside the box */
-  margin: 20px auto; /* Center the box with margin */
-  max-width: 800px; /* Limit the width */
-  background-color: #f9f5eb; /* Light background color */
-  position: relative; /* Optional, similar to HomePage */
-  text-align: center; /* Center text */
+  border: 5px solid #617457; 
+  border-radius: 15px; 
+  padding: 20px; 
+  margin: 20px auto;
+  max-width: 800px; 
+  background-color: #f9f5eb; 
+  position: relative; 
+  text-align: center; 
 }
 
 h1 {

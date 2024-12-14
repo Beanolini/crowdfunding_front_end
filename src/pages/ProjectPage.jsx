@@ -1,11 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { allProjects } from "../Data"; // Import your data
+import { allProjects } from "../Data"; 
 
 function ProjectPage() {
-  const { id } = useParams(); // Get the project ID from the URL
+  const { id } = useParams(); 
 
-  // Find the project using the ID
   const project = allProjects.find((project) => project.id === parseInt(id));
 
   if (!project) {

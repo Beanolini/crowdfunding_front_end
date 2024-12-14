@@ -3,6 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/use-auth.js";
 import postPledge from "../api/post-pledge.js";
 
+export const Checkbox = () => {
+  const handleChange = () => {
+    console.log("The checkbox was toggled");
+  };
+
+  return <input type="checkbox" onChange={handleChange} />;
+};
+
 function PledgeForm() {
   const navigate = useNavigate();
   const { auth, setAuth } = useAuth();
@@ -13,13 +21,12 @@ function PledgeForm() {
     anonymous: false,
     comment: "",
   });
-  console.log(pledgeDetails);
 
   const handleChange = (event) => {
-    const { id, value } = event.target;
+    const { id, value, type, checked } = event.target;
     setPledgeDetails((prevPledgeDetails) => ({
       ...prevPledgeDetails,
-      [id]: value,
+      [id]: type === "checkbox" ? checked : value,
     }));
   };
 
@@ -29,7 +36,6 @@ function PledgeForm() {
     if (
       pledgeDetails.amount &&
       pledgeDetails.project &&
-      pledgeDetails.anonymous &&
       pledgeDetails.comment
     ) {
       postPledge(
@@ -41,18 +47,10 @@ function PledgeForm() {
         navigate("/");
       });
     }
-
-  function Checkbox() { 
-    const handleChange = () => { 
-    console.log('The checkbox was toggled'); 
-    
-  }; 
-  
+  };
 
   return (
-    <form>
-      {" "}
-      onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="amount">Amount:</label>
         <input
@@ -64,21 +62,24 @@ function PledgeForm() {
       </div>
       <div>
         <label htmlFor="project">Project:</label>
-        <input
-          type="text"
+        <select
           id="project"
-          placeholder="Project"
+          value={pledgeDetails.project}
           onChange={handleChange}
-        />
+        >
+          <option value="">Select a Project</option>
+          <option value="Gowrick Greatflower">Gowrick Greatflower</option>
+          <option value="Anyas Nightsun">Anyas Nightsun</option>
+          <option value="Kasumo Sunmeadow">Kasumo Sunmeadow</option>
+          <option value="Roslyse Nimbleflow">Roslyse Nimbleflow</option>
+          <option value="Hanys Teafoot">Hanys Teafoot</option>
+          <option value="Antran Shadowspell">Antran Shadowspell</option>
+          <option value="Zefara Bronzetopple">Zefara Bronzetopple</option>
+        </select>
       </div>
-      <div>
-        <label htmlFor="anonymous">Anonymous:</label>
-        <input
-          type="checkbox"
-          id="anonymous"
-          placeholder="Anonymous"
-          onChange={handleChange}
-        />
+      <div className="checkbox-container">
+        <input type="checkbox" id="anonymous" onChange={handleChange} />
+        <label htmlFor="anonymous">Anonymous</label>
       </div>
       <div>
         <label htmlFor="comment">Comment:</label>
@@ -94,5 +95,4 @@ function PledgeForm() {
   );
 }
 
-export {Checkbox};
-export default PledgeForm; 
+export default PledgeForm;

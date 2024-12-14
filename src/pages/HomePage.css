@@ -1,10 +1,10 @@
 body {
   background-image: url("../images/background-2.jpg");
-  background-size: cover; /* Ensures the image covers the whole screen */
+  background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
-  background-attachment: fixed; /* Fixed background for better scroll effects */
+  background-attachment: fixed; 
 }
 
 #project-list {
@@ -26,7 +26,7 @@ h1 {
   font-family: "inknut antiqua", serif;
   font-size: 36px;
   font-weight: bold;
-  color: #617457; /* White text for contrast */
+  color: #617457; 
   text-align: center;
   margin-bottom: 20px;
 }
@@ -36,7 +36,7 @@ p {
   font-size: 16px;
   color: #fad3ab;
   text-align: center;
-  margin-bottom: 10px; /* Reduce space below <p> */
+  margin-bottom: 10px; 
 }
 
 .header-box {
@@ -51,20 +51,20 @@ p {
 }
 
 .header-box::before {
-  left: 10px; /* Left leaf */
+  left: 10px; 
 }
 
 .header-box::after {
-  right: 10px; /* Right leaf */
+  right: 10px;
 }
 
 .header-box .nav-icon {
-  width: 50px; /* Larger size */
+  width: 50px; 
   height: 50px;
-  margin-top: 5px; /* Decrease margin above the icon */
-  transition: transform 0.2s ease-in-out; /* Smooth hover animation */
+  margin-top: 5px; 
+  transition: transform 0.2s ease-in-out; 
 }
 
 .header-box .nav-icon:hover {
-  transform: scale(1.2); /* Slight hover enlargement */
+  transform: scale(1.2); 
 }
