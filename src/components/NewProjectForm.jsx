@@ -13,7 +13,6 @@ function NewProjectForm() {
     goal: "",
     image: "",
   });
-
   console.log(projectDetails);
 
   const handleChange = (event) => {
@@ -37,12 +36,8 @@ function NewProjectForm() {
         projectDetails.title,
         projectDetails.description,
         projectDetails.goal,
-        projectDetails.image
-      ).then((response) => {
-        window.localStorage.setItem("token", response.token);
-        setAuth({
-          token: response.token,
-        });
+        projectDetails.image,
+      ).then(() => {
         navigate("/");
       });
     }

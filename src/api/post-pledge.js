@@ -1,16 +1,15 @@
-async function postPledge(amount, project, user, anonymous, comment) {
+async function postPledge(amount, projectId, anonymous, comment) {
   const token = window.localStorage.getItem("token");
-  const url = `${import.meta.env.VITE_API_URL}/projects/`;
+  const url = `${import.meta.env.VITE_API_URL}/pledges/`; // Correct endpoint for pledges
   const response = await fetch(url, {
-    method: "POST", // We need to tell the server that we are sending JSON data so we set the Content-Type header to application/json
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Token ${token}`,
     },
     body: JSON.stringify({
       amount: amount,
-      project: project,
-      user: user,
+      project: projectId, // Use project ID as the foreign key
       anonymous: anonymous,
       comment: comment,
     }),

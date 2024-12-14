@@ -7,9 +7,7 @@ function NewProjectPage() {
       <div className="header-box">
         <h1>Create a New Project</h1>
         {/* Removed the icon image */}
-        <form>
-          <NewProjectForm />
-        </form>
+        <NewProjectForm />
       </div>
     </div>
   );

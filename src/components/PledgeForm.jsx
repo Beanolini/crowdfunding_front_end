@@ -10,10 +10,6 @@ function PledgeForm() {
         <input type="text" id="project" placeholder="Project" />
       </div>
       <div>
-        <label htmlFor="supporter">Supporter:</label>
-        <input type="text" id="supporter" placeholder="Supporter" />
-      </div>
-      <div>
         <label htmlFor="annonymous">Annonymous:</label>
         <input type="checkbox" id="annonymous" placeholder="Annonymous" />
       </div>
