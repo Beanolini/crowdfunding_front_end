@@ -10,7 +10,7 @@ function PledgeForm() {
   const [pledgeDetails, setPledgeDetails] = useState({
     amount: "",
     project: "",
-    anonymous: "",
+    anonymous: false,
     comment: "",
   });
   console.log(pledgeDetails);
@@ -41,9 +41,18 @@ function PledgeForm() {
         navigate("/");
       });
     }
-  };
+
+  function Checkbox() { 
+    const handleChange = () => { 
+    console.log('The checkbox was toggled'); 
+    
+  }; 
+  
+
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
+      {" "}
+      onSubmit={handleSubmit}>
       <div>
         <label htmlFor="amount">Amount:</label>
         <input
@@ -85,4 +94,5 @@ function PledgeForm() {
   );
 }
 
-export default PledgeForm;
+export {Checkbox};
+export default PledgeForm; 
