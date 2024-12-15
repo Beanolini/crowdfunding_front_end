@@ -1,11 +1,9 @@
+import { allProjects } from "../data"; // Importing allProjects
 import ProjectCard from "../components/ProjectCard";
 import "./HomePage.css";
 import dreamsIcon from "../images/icon-dreams.png";
-import useProjects from "../hooks/use-projects";
 
 function HomePage() {
-  const { projects, isloading, error } = useProjects();
-
   return (
     <div>
       <div className="header-box">
@@ -15,9 +13,9 @@ function HomePage() {
       </div>
 
       <div id="project-list">
-        {projects.map((projectData, key) => {
-          return <ProjectCard key={key} projectData={projectData} />;
-        })}
+        {allProjects.map((projectData, key) => (
+          <ProjectCard key={key} projectData={projectData} />
+        ))}
       </div>
     </div>
   );

@@ -8,7 +8,6 @@ import AboutPage from "./pages/AboutPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import NewProjectPage from "./pages/NewProjectPage.jsx";
-import PledgePage from "./pages/PledgePage.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx"; // Import the ProjectPage
 
 // Import Components
@@ -26,7 +25,6 @@ const router = createBrowserRouter([
       { path: "/about", element: <AboutPage /> },
       { path: "/contact", element: <ContactPage /> },
       { path: "/newproject", element: <NewProjectPage /> },
-      { path: "/pledgepage", element: <PledgePage /> },
       { path: "/project/:id", element: <ProjectPage /> }, // Add dynamic project route
     ],
   },
