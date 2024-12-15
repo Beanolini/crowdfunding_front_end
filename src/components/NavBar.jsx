@@ -4,7 +4,6 @@ import "./NavBar.css";
 import homeIcon from "../images/icon-home.png";
 import aboutIcon from "../images/icon-about.png";
 import newprojectIcon from "../images/icon-newproject.png";
-import pledgeIcon from "../images/icon-pledge.png";
 import contactIcon from "../images/icon-contact.png";
 import loginIcon from "../images/icon-login.png";
 import logoutIcon from "../images/icon-logout.png";
@@ -31,10 +30,6 @@ function NavBar() {
         <Link to="/newproject">
           <img src={newprojectIcon} alt="New Project" className="nav-icon" />
           New Project
-        </Link>
-        <Link to="/pledgepage">
-          <img src={pledgeIcon} alt="Pledge Page" className="nav-icon" />
-          Pledge Page
         </Link>
         <Link to="/contact">
           <img src={contactIcon} alt="Contact Page" className="nav-icon" />
