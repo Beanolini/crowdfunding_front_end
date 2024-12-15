@@ -14,7 +14,7 @@ export const allProjects = [
     goal: 150,
     image: halflingOne,
     is_open: true,
-    date_created: "2020-03-20T14:22:23.382748Z",
+    date_created: "2024-12-15",
     owner: 1,
   },
   {
@@ -24,7 +24,7 @@ export const allProjects = [
     goal: 150,
     image: halflingTwo,
     is_open: true,
-    date_created: "2020-03-20T18:28:23.382748Z",
+    date_created: "2024-12-15",
     owner: 1,
   },
   {
@@ -34,7 +34,7 @@ export const allProjects = [
     goal: 150,
     image: halflingThree,
     is_open: true,
-    date_created: "2020-02-20T14:28:23.382748Z",
+    date_created: "2024-12-15",
     owner: 1,
   },
   {
@@ -44,7 +44,7 @@ export const allProjects = [
     goal: 150,
     image: halflingFour,
     is_open: true,
-    date_created: "2020-03-20T14:28:23.382748Z",
+    date_created: "2024-12-15",
     owner: 2,
   },
   {
@@ -54,7 +54,7 @@ export const allProjects = [
     goal: 150,
     image: halflingFive,
     is_open: true,
-    date_created: "2019-03-20T12:28:23.382748Z",
+    date_created: "2024-12-15",
     owner: 2,
   },
   {
@@ -64,7 +64,7 @@ export const allProjects = [
     goal: 150,
     image: halflingSix,
     is_open: true,
-    date_created: "2020-03-20T14:28:23.382748Z",
+    date_created: "2024-12-15",
     owner: 1,
   },
   {
@@ -74,7 +74,7 @@ export const allProjects = [
     goal: 150,
     image: halflingSeven,
     is_open: true,
-    date_created: "2020-02-20T14:28:23.382748Z",
+    date_created: "2024-12-15",
     owner: 2,
   },
 ];
@@ -86,7 +86,7 @@ export const oneProject = {
   goal: 150,
   image: "https://via.placeholder.com/300.jpg",
   is_open: true,
-  date_created: "2020-03-20T14:22:23.382748Z",
+  date_created: "2024-12-15",
   owner: 1,
   pledges: [
     {
