@@ -1,9 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { allProjects } from "../Data"; 
+import { allProjects } from "../Data";
+import PledgeForm from "./PledgeForm";
 
 function ProjectPage() {
-  const { id } = useParams(); 
+  const { id } = useParams();
 
   const project = allProjects.find((project) => project.id === parseInt(id));
 
@@ -31,6 +32,8 @@ function ProjectPage() {
         <strong>Created on: </strong>
         {new Date(project.date_created).toLocaleDateString()}
       </p>
+      <h2>Make a Pledge</h2>
+      <PledgeForm projectId={project.id} />
     </div>
   );
 }
