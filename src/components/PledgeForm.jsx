@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/use-auth.js";
 import postPledge from "../api/post-pledge.js";
 
-function PledgeForm() {
+function PledgeForm(props) {
+  const { projectId } = props;
   const navigate = useNavigate();
   const { auth } = useAuth();
-
   const [pledgeDetails, setPledgeDetails] = useState({
     amount: "",
-    project: "",
+    project: projectId,
     anonymous: false,
     comment: "",
   });
