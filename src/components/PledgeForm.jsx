@@ -62,26 +62,6 @@ function PledgeForm() {
         />
       </div>
 
-      {/* Project Dropdown */}
-      <div>
-        <label htmlFor="project">Project:</label>
-        <select
-          id="project"
-          value={pledgeDetails.project}
-          onChange={handleChange}
-        >
-          <option value="">Select a Project</option>
-          <option value="1">Gowrick Greatflower</option>
-          <option value="2">Anyas Nightsun</option>
-          <option value="3">Kasumo Sunmeadow</option>
-          <option value="4">Roslyse Nimbleflow</option>
-          <option value="5">Hanys Teafoot</option>
-          <option value="6">Antran Shadowspell</option>
-          <option value="7">Zefara Bronzetopple</option>
-        </select>
-      </div>
-
-      {/* Anonymous Checkbox */}
       <div>
         <label htmlFor="anonymous">Anonymous:</label>
         <input
@@ -92,7 +72,6 @@ function PledgeForm() {
         />
       </div>
 
-      {/* Comment Field */}
       <div>
         <label htmlFor="comment">Comment:</label>
         <input
@@ -104,7 +83,6 @@ function PledgeForm() {
         />
       </div>
 
-      {/* Submit Button */}
       <button type="submit">Submit</button>
     </form>
   );
