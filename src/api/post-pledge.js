@@ -25,7 +25,7 @@ async function postPledge(projectId, amount, anonymous = false, comment = "") {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`, // Use the correct token retrieved from localStorage
+        Authorization: `Token ${token}`, // Use the correct token retrieved from localStorage
       },
       body: JSON.stringify(bodyData),
     });
