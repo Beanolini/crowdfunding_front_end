@@ -1,6 +1,6 @@
 async function postPledge(projectId, amount, anonymous = false, comment = "") {
   // Define the URL for the pledge creation endpoint
-  const url = `${import.meta.env.VITE_API_URL}/pledge/create/`;
+  const url = `${import.meta.env.VITE_API_URL}/pledges/create/`;
 
   // Retrieve the token from localStorage
   const token = window.localStorage.getItem("token");
