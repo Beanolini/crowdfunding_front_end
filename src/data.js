@@ -13,7 +13,7 @@ export const allProjects = [
     description: "The first project.",
     goal: 150,
     image: halflingOne,
-    is_open: true,
+    is_open: true, // Project is open
     date_created: "2024-12-15",
     owner: 1,
   },
@@ -23,7 +23,7 @@ export const allProjects = [
     description: "The second project.",
     goal: 150,
     image: halflingTwo,
-    is_open: true,
+    is_open: true, // Project is open
     date_created: "2024-12-15",
     owner: 1,
   },
@@ -33,7 +33,7 @@ export const allProjects = [
     description: "The third project.",
     goal: 150,
     image: halflingThree,
-    is_open: true,
+    is_open: true, // Project is open
     date_created: "2024-12-15",
     owner: 1,
   },
@@ -43,7 +43,7 @@ export const allProjects = [
     description: "The fourth project.",
     goal: 150,
     image: halflingFour,
-    is_open: true,
+    is_open: true, // Project is open
     date_created: "2024-12-15",
     owner: 2,
   },
@@ -53,7 +53,7 @@ export const allProjects = [
     description: "The fifth project.",
     goal: 150,
     image: halflingFive,
-    is_open: true,
+    is_open: true, // Project is open
     date_created: "2024-12-15",
     owner: 2,
   },
@@ -63,7 +63,7 @@ export const allProjects = [
     description: "The sixth project.",
     goal: 150,
     image: halflingSix,
-    is_open: true,
+    is_open: true, // Project is open
     date_created: "2024-12-15",
     owner: 1,
   },
@@ -73,7 +73,7 @@ export const allProjects = [
     description: "The seventh project.",
     goal: 150,
     image: halflingSeven,
-    is_open: true,
+    is_open: true, // Project is open
     date_created: "2024-12-15",
     owner: 2,
   },
@@ -81,20 +81,28 @@ export const allProjects = [
 
 export const oneProject = {
   id: 1,
-  title: "Project One",
+  title: "Gowrick Greatflower",
   description: "The first project.",
   goal: 150,
-  image: "https://via.placeholder.com/300.jpg",
-  is_open: true,
+  image: halflingOne,
+  is_open: true, // Project is open
   date_created: "2024-12-15",
   owner: 1,
   pledges: [
     {
       id: 1,
       amount: 100,
-      comment: "A comment for the pledge",
+      comment: "A comment for the pledge.",
       anonymous: false,
       supporter: 3,
+      project_id: 1,
+    },
+    {
+      id: 2,
+      amount: 50,
+      comment: "Another pledge comment.",
+      anonymous: true,
+      supporter: 4,
       project_id: 1,
     },
   ],
