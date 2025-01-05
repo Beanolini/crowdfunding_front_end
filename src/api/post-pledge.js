@@ -1,50 +1,51 @@
-async function postPledge(projectId, amount, anonymous = false, comment = "") {
-  // Define the URL for the pledge creation endpoint
-  const url = `${import.meta.env.VITE_API_URL}/pledges/create/`;
+// post-pledge.js
 
-  // Retrieve the token from localStorage
-  const token = window.localStorage.getItem("token");
-  console.log("Token retrieved from localStorage:", token); // Add this line to debug
-
-  // Check if the token exists; if not, throw an error
-  if (!token) {
-    throw new Error("Authentication credentials were not provided.");
+const postPledge = async (amount, projectId, anonymous, comment) => {
+  // Validate the input parameters
+  if (!amount || amount <= 0) {
+    throw new Error("Amount must be a positive number.");
   }
 
-  // Prepare the request body
-  const bodyData = {
+  if (!projectId) {
+    throw new Error("Project ID is required.");
+  }
+
+  // Prepare the request payload
+  const payload = {
+    amount,
     project: projectId,
-    amount: amount,
-    anonymous: anonymous,
-    comment: comment || "", // Ensure empty comment is handled
+    anonymous,
+    comment: comment || "", // Ensure comment is an empty string if not provided
   };
 
   try {
-    // Make the POST request to create the pledge
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Token ${token}`, // Use the correct token retrieved from localStorage
-      },
-      body: JSON.stringify(bodyData),
-    });
+    // Make the POST request
+    const response = await fetch(
+      `${import.meta.env.VITE_API_URL}/pledges/create/`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // Include any other headers here (like Authorization if needed)
+        },
+        body: JSON.stringify(payload),
+      }
+    );
 
-    // Handle response
+    // Handle response: Check for non-2xx status codes
     if (!response.ok) {
       const errorData = await response.json();
       throw new Error(
-        `Failed to create pledge: ${errorData.detail || "Unknown error"}`
+        errorData.detail || "Failed to create pledge. Unknown error."
       );
     }
 
-    // Return the JSON response if the request is successful
+    // Return the successful response data
     return await response.json();
   } catch (error) {
-    // Log the error (optional)
-    console.error("Error during pledge creation:", error);
-    throw error; // Re-throw the error to be handled by the calling function
+    console.error("Error during pledge creation:", error); // Log detailed error for debugging
+    throw error; // Re-throw the error to be handled by the caller (in this case, PledgeForm)
   }
-}
+};
 
 export default postPledge;
