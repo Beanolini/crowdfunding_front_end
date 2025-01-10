@@ -49,7 +49,7 @@ function PledgeForm({ projectId }) {
         submissionData.comment
       )
         .then(() => {
-          navigate(`/projects/${submissionData.project}`); // Navigate back to the project page
+          navigate(`/project/${submissionData.project}`); // Navigate back to the project page
         })
         .catch((err) => {
           console.error("Failed to create pledge:", err);

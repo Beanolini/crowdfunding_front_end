@@ -10,6 +10,8 @@ const postPledge = async (amount, projectId, anonymous, comment) => {
     throw new Error("Project ID is required.");
   }
 
+  const token = window.localStorage.getItem("token");
+
   // Prepare the request payload
   const payload = {
     amount,
@@ -20,17 +22,15 @@ const postPledge = async (amount, projectId, anonymous, comment) => {
 
   try {
     // Make the POST request
-    const response = await fetch(
-      `${import.meta.env.VITE_API_URL}/pledges/create/`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          // Include any other headers here (like Authorization if needed)
-        },
-        body: JSON.stringify(payload),
-      }
-    );
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/pledges/`, {
+      method: "POST",
+      headers: {
+        Authorization: `Token ${token}`,
+        "Content-Type": "application/json",
+        // Include any other headers here (like Authorization if needed)
+      },
+      body: JSON.stringify(payload),
+    });
 
     // Handle response: Check for non-2xx status codes
     if (!response.ok) {
