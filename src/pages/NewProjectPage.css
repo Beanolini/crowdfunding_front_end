@@ -1,29 +1,26 @@
-/* Remove default borders and outlines for form controls */
 form,
 form input,
 form textarea,
 form select,
 form button {
-  border: none;  /* Remove border */
-  outline: none; /* Remove outline */
-  box-shadow: none; /* Remove any box shadow that may be applied */
+  border: none;  
+  outline: none; 
+  box-shadow: none; 
 }
 
-/* Styling for form container to match the other pages */
 form {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(249, 245, 235, 0.9); /* Subtle background */
+  background-color: rgba(249, 245, 235, 0.9); 
   width: 100%;
   max-width: 800px;
   margin: 20px auto;
   box-sizing: border-box;
 }
 
-/* Styling input fields and labels */
 form input,
 form textarea,
 form select {
@@ -33,10 +30,9 @@ form select {
   font-size: 16px;
   margin-top: 5px;
   box-sizing: border-box;
-  border: 2px solid #ccc;  /* Subtle border on inputs for consistency */
+  border: 2px solid #ccc;  
 }
 
-/* Button styling */
 form button {
   background-color: #617457;
   color: white;
@@ -55,15 +51,13 @@ form button:hover {
   background-color: #506340;
 }
 
-/* Optional: Style input fields to remove the faint borders */
 form input:focus,
 form textarea:focus,
 form select:focus {
-  border: 2px solid #617457; /* Optional: you can add a focus border if you want */
+  border: 2px solid #617457; 
   outline: none;
 }
 
-/* Optional: Styling for form labels */
 form label {
   font-size: 16px;
   color: #333;
@@ -72,28 +66,26 @@ form label {
   text-align: left;
 }
 
-/* Styling for the form container (page-specific) */
 .newproject-container, .contact-container {
-  background-image: url("../images/background-2.jpg"); /* You can adjust the background for these pages as needed */
+  background-image: url("../images/background-2.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
-  font-family: "inknut antiqua", serif; /* Matching font style */
+  font-family: "inknut antiqua", serif; 
   text-align: center;
 }
 
 .newproject-container h1,
 .contact-container h1 {
-  font-size: 36px;  /* Match the font size */
-  color: #617457;  /* Apply the desired color */
-  font-weight: bold;  /* Optional: bold for better emphasis */
+  font-size: 36px;  
+  color: #617457;  
+  font-weight: bold;  
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* Optional: Adding specific margins for each page container */
 .newproject-container {
   padding: 40px 0;
 }

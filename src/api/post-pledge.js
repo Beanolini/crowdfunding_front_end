@@ -1,5 +1,3 @@
-// post-pledge.js
-
 const postPledge = async (amount, projectId, anonymous, comment) => {
   // Validate the input parameters
   if (!amount || amount <= 0) {

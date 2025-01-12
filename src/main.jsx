@@ -2,20 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// Import Pages
 import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
-import SignUpPage from "./pages/SignUpPage.jsx"; // Corrected import
+import SignUpPage from "./pages/SignUpPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import NewProjectPage from "./pages/NewProjectPage.jsx";
-import ProjectPage from "./pages/ProjectPage.jsx"; // Import the ProjectPage
+import ProjectPage from "./pages/ProjectPage.jsx";
 
-// Import Components
 import NavBar from "./components/NavBar.jsx";
 import { AuthProvider } from "./components/AuthProvider.jsx";
 
-// Create the router
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,7 +24,7 @@ const router = createBrowserRouter([
       { path: "/contact", element: <ContactPage /> },
       { path: "/signup", element: <SignUpPage /> },
       { path: "/newproject", element: <NewProjectPage /> },
-      { path: "/project/:id", element: <ProjectPage /> }, // Dynamic project route
+      { path: "/project/:id", element: <ProjectPage /> },
     ],
   },
 ]);
