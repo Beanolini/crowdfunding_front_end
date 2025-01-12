@@ -10,7 +10,6 @@ import SignUpPage from "./pages/SignUpPage.jsx"; // Corrected import
 import LoginPage from "./pages/LoginPage.jsx";
 import NewProjectPage from "./pages/NewProjectPage.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx"; // Import the ProjectPage
-import NotFoundPage from "./pages/NotFoundPage.jsx"; // Optional 404 page
 
 // Import Components
 import NavBar from "./components/NavBar.jsx";
@@ -29,7 +28,6 @@ const router = createBrowserRouter([
       { path: "/signup", element: <SignUpPage /> },
       { path: "/newproject", element: <NewProjectPage /> },
       { path: "/project/:id", element: <ProjectPage /> }, // Dynamic project route
-      { path: "*", element: <NotFoundPage /> }, // Catch-all route for 404
     ],
   },
 ]);
