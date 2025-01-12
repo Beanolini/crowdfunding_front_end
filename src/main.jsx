@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
+import SignUpPage from "./SignUpPage";
 import LoginPage from "./pages/LoginPage.jsx";
 import NewProjectPage from "./pages/NewProjectPage.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx"; // Import the ProjectPage
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: "/login", element: <LoginPage /> },
       { path: "/about", element: <AboutPage /> },
       { path: "/contact", element: <ContactPage /> },
+      { path: "/signup", element: <SignUpPage /> },
       { path: "/newproject", element: <NewProjectPage /> },
       { path: "/project/:id", element: <ProjectPage /> }, // Add dynamic project route
     ],
