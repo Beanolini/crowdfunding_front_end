@@ -19,6 +19,7 @@ function SignUpForm() {
 
   return (
     <div>
+      <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
@@ -29,6 +30,7 @@ function SignUpForm() {
             value={formData.username}
             onChange={handleChange}
             required
+            placeholder="Enter your username" // Placeholder text for the username field
           />
         </div>
         <div>
@@ -40,6 +42,7 @@ function SignUpForm() {
             value={formData.email}
             onChange={handleChange}
             required
+            placeholder="Enter your email" // Placeholder text for the email field
           />
         </div>
         <div>
@@ -51,6 +54,7 @@ function SignUpForm() {
             value={formData.password}
             onChange={handleChange}
             required
+            placeholder="Enter your password" // Placeholder text for the password field
           />
         </div>
         <button type="submit">Sign Up</button>
