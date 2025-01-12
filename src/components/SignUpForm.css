@@ -1,4 +1,4 @@
-/* General styling for the form container */
+/* Container for the form */
 .signup-form-container {
   border: 5px solid #617457;
   border-radius: 15px;
@@ -8,7 +8,7 @@
   background-color: #f9f5eb;
   position: relative;
   text-align: center;
-  font-family: "inknut antiqua", serif;
+  font-family: "inknut antiqua", serif; /* This ensures the font matches the Login Page */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
@@ -25,7 +25,7 @@ form {
   text-align: left;
 }
 
-/* Styling for form inputs and labels */
+/* Form input and label styling */
 form div {
   width: 100%;
   margin-bottom: 15px;
@@ -69,11 +69,12 @@ form button:hover {
   background-color: #506340;
 }
 
-/* Styling for the heading inside the form box */
+/* Updated heading for "Create a New Account" */
 .signup-form-container h1 {
   font-size: 24px;
-  color: #333;
+  color: #333; /* Same color as Login Page */
   margin-bottom: 20px;
   text-align: center;
-  font-weight: bold;
+  font-family: "inknut antiqua", serif; /* Same font as Login Page */
+  font-weight: bold; /* To ensure bold text like Login Page */
 }
