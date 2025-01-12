@@ -39,6 +39,14 @@ function NavBar() {
           />
           Contact Page
         </Link>
+        <Link to="/signup">
+          <img
+            src="/Images/icon-signup.png"
+            alt="SignUp"
+            className="nav-icon"
+          />
+          Sign Up
+        </Link>
         {auth.token ? (
           <Link to="/" onClick={handleLogout}>
             <img
