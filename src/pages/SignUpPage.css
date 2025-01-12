@@ -7,6 +7,7 @@ body {
   background-attachment: fixed;
 }
 
+/* Styling for the container of the signup form */
 .signup-form-container {
   border: 5px solid #617457;
   border-radius: 15px;
@@ -21,6 +22,27 @@ body {
   box-sizing: border-box;
 }
 
+/* Center the entire signup form and allow some padding */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* Optional background color for the page */
+}
+
+/* Styling for the h1 element (Create a New Account) */
+.signup-container h1 {
+  font-family: "inknut antiqua", serif;  /* Same font as Login page */
+  color: #333;  /* Matching the color of the "Log In" heading */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;  /* Adds space below the heading */
+}
+
+/* Form styling */
 form {
   display: flex;
   flex-direction: column;
@@ -32,6 +54,7 @@ form {
   text-align: left;
 }
 
+/* Each input field and label styling */
 form div {
   width: 100%;
   margin-bottom: 15px;
@@ -46,6 +69,7 @@ form label {
   display: block;
 }
 
+/* Styling for form input fields */
 form input {
   width: 100%;
   padding: 12px;
@@ -56,6 +80,7 @@ form input {
   box-sizing: border-box;
 }
 
+/* Button styling */
 form button {
   background-color: #617457;
   color: white;
@@ -70,6 +95,7 @@ form button {
   transition: background-color 0.3s ease;
 }
 
+/* Button hover effect */
 form button:hover {
   background-color: #506340;
 }
