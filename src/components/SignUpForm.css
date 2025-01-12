@@ -1,26 +1,42 @@
+/* General styling for the form container */
+.signup-form-container {
+  border: 5px solid #617457;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f5eb;
+  position: relative;
+  text-align: center;
+  font-family: "inknut antiqua", serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Form styling */
 form {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  background-color: rgba(249, 245, 235, 0.9);
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   box-sizing: border-box;
+  text-align: left;
 }
 
+/* Styling for form inputs and labels */
 form div {
   width: 100%;
   margin-bottom: 15px;
+  box-sizing: border-box;
 }
 
 form label {
   font-size: 16px;
   color: #333;
   margin-bottom: 5px;
+  text-align: left;
   display: block;
 }
 
@@ -34,6 +50,7 @@ form input {
   box-sizing: border-box;
 }
 
+/* Button styling */
 form button {
   background-color: #617457;
   color: white;
@@ -45,8 +62,18 @@ form button {
   cursor: pointer;
   margin-top: 10px;
   box-sizing: border-box;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
   background-color: #506340;
+}
+
+/* Styling for the heading inside the form box */
+.signup-form-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
 }
