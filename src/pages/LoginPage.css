@@ -7,6 +7,7 @@ body {
   background-attachment: fixed;
 }
 
+/* Styling for the container of the form */
 .login-form-container {
   border: 5px solid #617457;
   border-radius: 15px;
@@ -16,11 +17,22 @@ body {
   background-color: #f9f5eb;
   position: relative;
   text-align: center;
-  font-family: "inknut antiqua", serif;
+  font-family: "inknut antiqua", serif; /* Matches the font from the Sign Up Page */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
+/* Styling for the h1 element inside the login-form-container */
+.login-form-container h1 {
+  font-size: 36px;  /* Set font size to 36px */
+  color: #617457;  /* Set the font color to match the Sign Up page */
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "inknut antiqua", serif; /* Ensure the same font-family as Sign Up Page */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Form layout and styling */
 form {
   display: flex;
   flex-direction: column;
@@ -29,9 +41,10 @@ form {
   max-width: 600px;
   margin: 0 auto;
   box-sizing: border-box;
-  text-align: left; 
+  text-align: left;
 }
 
+/* Input fields and labels */
 form div {
   width: 100%;
   margin-bottom: 15px;
@@ -42,8 +55,8 @@ form label {
   font-size: 16px;
   color: #333;
   margin-bottom: 5px;
-  text-align: left; 
-  display: block; 
+  text-align: left;
+  display: block;
 }
 
 form input {
@@ -56,6 +69,7 @@ form input {
   box-sizing: border-box;
 }
 
+/* Button styling */
 form button {
   background-color: #617457;
   color: white;
