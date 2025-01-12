@@ -36,7 +36,8 @@ body {
 /* Styling for the h1 element (Create a New Account) */
 .signup-container h1 {
   font-family: "inknut antiqua", serif;  /* Same font as Login page */
-  color: #333;  /* Matching the color of the "Log In" heading */
+  color: #617457;  /* Matching the color of the "Log In" heading */
+  font-size: 36px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;  /* Adds space below the heading */
