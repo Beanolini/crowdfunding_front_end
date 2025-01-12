@@ -16,7 +16,7 @@
 /* Ensure the h1 inside the form container matches the Login Page */
 .signup-form-container h1 {
   font-size: 24px;
-  color: #333; /* Match color from Login Page h1 */
+  color: #617457; /* Change this color to match the desired color */
   margin-bottom: 20px;
   text-align: center;
   font-family: "inknut antiqua", serif; /* Same font-family as LoginPage */
