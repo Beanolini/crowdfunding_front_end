@@ -2,7 +2,7 @@ export const allProjects = [
   {
     id: 1,
     title: "Gowrick Greatflower",
-    description: "The Halfling World Record for Largest Soup Pot. Gowrick's goal is to create the world’s biggest soup pot, big enough to fit an entire village’s worth of ingredients, and then host the biggest soup party the world has ever seen. Help them create a world record-breaking pot for the biggest soup! We'll need gold, steel, and lots of carrots (and a very large cauldron). Together, we can feed hundreds of halflings — and maybe even a few elves!",
+    description: "The Halfling World Record for Largest Soup Pot! Gowrick's goal is to create the world’s biggest soup pot, big enough to fit an entire village’s worth of ingredients, and then host the biggest soup party the world has ever seen. Help them create a world record-breaking pot for the biggest soup! We'll need gold, steel, and lots of carrots (and a very large cauldron). Together, we can feed hundreds of halflings — and maybe even a few elves!",
     goal: 5000,
     image: "/images/halfling-one.jpg",
     is_open: true,
