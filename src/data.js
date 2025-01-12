@@ -2,7 +2,7 @@ export const allProjects = [
   {
     id: 1,
     title: "Gowrick Greatflower",
-    description: "The first project.",
+    description: "The Halfling World Record for Largest Soup Pot",
     goal: 150,
     image: "/images/halfling-one.jpg",
     is_open: true,
