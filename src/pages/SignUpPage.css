@@ -37,12 +37,13 @@ body {
 }
 
 /* Add a more specific rule for h1 to make sure the styles apply */
-.signup-container h1 {
-  font-family: "inknut antiqua", serif;  /* Same font as Login page */
-  color: #617457 !important;  /* Ensure the color is applied (use !important if needed) */
-  font-weight: bold;
+.signup-form-container h1 {
+  font-size: 36px; /* Updated font size */
+  color: #617457;  /* Color to match the Login page */
+  margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 20px;  /* Adds space below the heading */
+  font-family: "inknut antiqua", serif; /* Matches font family from LoginPage */
+  font-weight: bold; /* Make it bold like the Login Page */
 }
 
 /* Form styling */
