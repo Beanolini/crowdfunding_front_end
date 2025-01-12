@@ -1,12 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { useAuth } from "../hooks/use-auth.js";
 import "./NavBar.css";
-import homeIcon from "../images/icon-home.png";
-import aboutIcon from "../images/icon-about.png";
-import newprojectIcon from "../images/icon-newproject.png";
-import contactIcon from "../images/icon-contact.png";
-import loginIcon from "../images/icon-login.png";
-import logoutIcon from "../images/icon-logout.png";
 
 function NavBar() {
   const { auth, setAuth } = useAuth();
@@ -22,27 +16,45 @@ function NavBar() {
     <div>
       <nav>
         <Link to="/">
-          <img src={homeIcon} alt="Home" className="nav-icon" /> Home
+          <img src="/Images/icon-home.png" alt="Home" className="nav-icon" />
+          Home
         </Link>
         <Link to="/about">
-          <img src={aboutIcon} alt="About" className="nav-icon" /> About Page
+          <img src="/Images/icon-about.png" alt="About" className="nav-icon" />
+          About Page
         </Link>
         <Link to="/newproject">
-          <img src={newprojectIcon} alt="New Project" className="nav-icon" />
+          <img
+            src="/Images/icon-newproject.png"
+            alt="New Project"
+            className="nav-icon"
+          />
           New Project
         </Link>
         <Link to="/contact">
-          <img src={contactIcon} alt="Contact Page" className="nav-icon" />
+          <img
+            src="/Images/icon-contact.png"
+            alt="Contact"
+            className="nav-icon"
+          />
           Contact Page
         </Link>
         {auth.token ? (
           <Link to="/" onClick={handleLogout}>
-            <img src={logoutIcon} alt="Log Out" className="nav-icon" />
+            <img
+              src="/Images/icon-logout.png"
+              alt="Logout"
+              className="nav-icon"
+            />
             Log Out
           </Link>
         ) : (
           <Link to="/login">
-            <img src={loginIcon} alt="Log In" className="nav-icon" />
+            <img
+              src="/Images/icon-login.png"
+              alt="Login"
+              className="nav-icon"
+            />
             Log In
           </Link>
         )}

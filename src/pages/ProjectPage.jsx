@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { allProjects } from "../Data";
+import { allProjects } from "../data";
 import PledgeForm from "../components/PledgeForm";
 
 function ProjectPage() {
