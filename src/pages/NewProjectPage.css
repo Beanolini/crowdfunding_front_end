@@ -1,102 +1,103 @@
-body {
-  background-image: url("../images/background-2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  background-attachment: fixed;
+/* Remove default borders and outlines for form controls */
+form,
+form input,
+form textarea,
+form select,
+form button {
+  border: none;  /* Remove border */
+  outline: none; /* Remove outline */
+  box-shadow: none; /* Remove any box shadow that may be applied */
 }
 
-h1 {
-  font-family: "inknut antiqua", serif;
-  font-size: 36px;
-  font-weight: bold;
-  color: #617457;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-p {
-  font-family: "inknut antiqua", serif;
-  font-size: 16px;
-  color: #dbb06b;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.header-box {
-  border: 5px solid #617457;
-  border-radius: 15px;
+/* Styling for form container to match the other pages */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   padding: 20px;
-  margin: 20px auto;
+  border-radius: 10px;
+  background-color: rgba(249, 245, 235, 0.9); /* Subtle background */
+  width: 100%;
   max-width: 800px;
-  background-color: #f9f5eb;
-  position: relative;
-  text-align: center; 
-  font-family: "inknut antiqua", serif;
+  margin: 20px auto;
   box-sizing: border-box;
 }
 
-.header-box h1 {
-  font-family: "inknut antiqua", serif;
-  font-size: 36px;
-  font-weight: bold;
-  color: #617457;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.header-box form div:first-child {
-  margin-top: 20px;
-}
-
-.header-box form {
-  padding: 20px;
-  background-color: rgba(249, 245, 235, 0.9);
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  border: none;
-  text-align: left; 
-}
-
-.header-box form label {
-  text-align: left !important;
-  margin: 0;
-}
-
-.header-box form input,
-.header-box form select,
-.header-box form textarea {
+/* Styling input fields and labels */
+form input,
+form textarea,
+form select {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  border: 1px solid #617457;
+  padding: 12px;
+  border-radius: 8px;
   font-size: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;  /* Subtle border on inputs for consistency */
 }
 
-.header-box form button {
+/* Button styling */
+form button {
   background-color: #617457;
   color: white;
-  cursor: pointer;
   border: none;
-  padding: 15px 30px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
   font-size: 18px;
-  font-weight: bold;
-  border-radius: 25px;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 10px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
 }
 
-.header-box form button:hover {
-  background-color: #dbb06b;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+form button:hover {
+  background-color: #506340;
 }
 
-.header-box form button:focus {
+/* Optional: Style input fields to remove the faint borders */
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border: 2px solid #617457; /* Optional: you can add a focus border if you want */
   outline: none;
-  box-shadow: 0 0 0 3px rgba(94, 167, 94, 0.5);
+}
+
+/* Optional: Styling for form labels */
+form label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+/* Styling for the form container (page-specific) */
+.newproject-container, .contact-container {
+  background-image: url("../images/background-2.jpg"); /* You can adjust the background for these pages as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "inknut antiqua", serif; /* Matching font style */
+  text-align: center;
+}
+
+.newproject-container h1,
+.contact-container h1 {
+  font-size: 36px;  /* Match the font size */
+  color: #617457;  /* Apply the desired color */
+  font-weight: bold;  /* Optional: bold for better emphasis */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Optional: Adding specific margins for each page container */
+.newproject-container {
+  padding: 40px 0;
+}
+
+.contact-container {
+  padding: 40px 0;
 }
