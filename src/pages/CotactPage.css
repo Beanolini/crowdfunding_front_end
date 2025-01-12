@@ -93,3 +93,24 @@ form label {
 .contact-container {
   padding: 40px 0;
 }
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "inknut antiqua", serif; 
+  font-size: 16px;  
+  color: #333;  
+}
+
+textarea {
+  font-family: "inknut antiqua", serif;  
+  font-size: 16px;  
+  color: #333;  
+  border: 2px solid #ccc;  
+  border-radius: 8px;  
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  resize: vertical; 
+}
+
