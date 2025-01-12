@@ -1,6 +1,5 @@
-/* Set background image for the page */
 body {
-  background-image: url("../images/background-2.jpg"); /* Replace with your image path */
+  background-image: url("../images/background-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,26 +7,6 @@ body {
   background-attachment: fixed;
 }
 
-/* Container for the entire SignUp page */
-.signup-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Full height of the viewport */
-  text-align: center;
-  font-family: "inknut antiqua", serif;
-  padding: 20px;
-}
-
-/* Heading styling */
-.signup-container h1 {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Form container styling */
 .signup-form-container {
   border: 5px solid #617457;
   border-radius: 15px;
@@ -40,10 +19,8 @@ body {
   font-family: "inknut antiqua", serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  width: 100%;
 }
 
-/* Style for the form itself */
 form {
   display: flex;
   flex-direction: column;
@@ -55,7 +32,6 @@ form {
   text-align: left;
 }
 
-/* Style for form input fields */
 form div {
   width: 100%;
   margin-bottom: 15px;
@@ -80,7 +56,6 @@ form input {
   box-sizing: border-box;
 }
 
-/* Button styling */
 form button {
   background-color: #617457;
   color: white;
@@ -95,14 +70,6 @@ form button {
   transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 form button:hover {
   background-color: #506340;
-}
-
-/* Optional: Add a small message for user actions */
-.signup-container p {
-  font-size: 14px;
-  color: #666;
-  margin-top: 20px;
 }
