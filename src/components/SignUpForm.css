@@ -1,4 +1,4 @@
-/* Container for the form */
+/* Styling for the container of the form */
 .signup-form-container {
   border: 5px solid #617457;
   border-radius: 15px;
@@ -8,12 +8,22 @@
   background-color: #f9f5eb;
   position: relative;
   text-align: center;
-  font-family: "inknut antiqua", serif; /* This ensures the font matches the Login Page */
+  font-family: "inknut antiqua", serif; /* Matches the font from the Login Page */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
-/* Form styling */
+/* Ensure the h1 inside the form container matches the Login Page */
+.signup-form-container h1 {
+  font-size: 24px;
+  color: #333; /* Match color from Login Page h1 */
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "inknut antiqua", serif; /* Same font-family as LoginPage */
+  font-weight: bold; /* Make the text bold like the Login Page */
+}
+
+/* Form layout and styling */
 form {
   display: flex;
   flex-direction: column;
@@ -25,7 +35,7 @@ form {
   text-align: left;
 }
 
-/* Form input and label styling */
+/* Input fields and labels */
 form div {
   width: 100%;
   margin-bottom: 15px;
@@ -67,14 +77,4 @@ form button {
 
 form button:hover {
   background-color: #506340;
-}
-
-/* Updated heading for "Create a New Account" */
-.signup-form-container h1 {
-  font-size: 24px;
-  color: #333; /* Same color as Login Page */
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: "inknut antiqua", serif; /* Same font as Login Page */
-  font-weight: bold; /* To ensure bold text like Login Page */
 }
