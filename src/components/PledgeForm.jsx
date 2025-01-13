@@ -5,15 +5,15 @@ import postPledge from "../api/post-pledge.js";
 
 function PledgeForm({ projectId }) {
   const navigate = useNavigate();
-  const { auth } = useAuth(); // Check user authentication
+  const { auth } = useAuth(); 
   const [pledgeDetails, setPledgeDetails] = useState({
-    amount: null, // Initialize as null
-    project: projectId, // Set projectId from props
+    amount: null, 
+    project: projectId, 
     anonymous: false,
-    comment: null, // Initialize as null
+    comment: null, 
   });
 
-  const [error, setError] = useState(""); // State for storing error messages
+  const [error, setError] = useState(""); 
 
   const handleChange = (event) => {
     const { id, value, type, checked } = event.target;
@@ -26,7 +26,6 @@ function PledgeForm({ projectId }) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Ensure user is authenticated
     if (!auth) {
       setError("You must be logged in to make a pledge.");
       return;
@@ -34,13 +33,11 @@ function PledgeForm({ projectId }) {
 
     console.log("Pledge details on submission:", pledgeDetails);
 
-    // Create a copy of pledgeDetails and remove empty fields
     const submissionData = { ...pledgeDetails };
     if (!submissionData.comment) {
-      delete submissionData.comment; // Remove comment if null or empty
+      delete submissionData.comment; 
     }
 
-    // Ensure amount is valid and project ID is set
     if (submissionData.amount > 0 && submissionData.project) {
       postPledge(
         submissionData.amount,
@@ -49,7 +46,7 @@ function PledgeForm({ projectId }) {
         submissionData.comment
       )
         .then(() => {
-          navigate(`/`); // Navigate back to the project page
+          navigate(`/`); 
         })
         .catch((err) => {
           console.error("Failed to create pledge:", err);

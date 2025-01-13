@@ -29,7 +29,7 @@ function SignUpForm() {
             value={formData.username}
             onChange={handleChange}
             required
-            placeholder="Your username" // Placeholder text for the username field
+            placeholder="Your username" 
           />
         </div>
         <div>
@@ -41,7 +41,7 @@ function SignUpForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            placeholder="Your email" // Placeholder text for the email field
+            placeholder="Your email" 
           />
         </div>
         <div>
@@ -53,7 +53,7 @@ function SignUpForm() {
             value={formData.password}
             onChange={handleChange}
             required
-            placeholder="Your password" // Placeholder text for the password field
+            placeholder="Your password" 
           />
         </div>
         <button type="submit">Sign Up</button>

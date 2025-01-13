@@ -25,21 +25,18 @@ function LoginForm() {
     if (credentials.username && credentials.password) {
       postLogin(credentials.username, credentials.password)
         .then((response) => {
-          // Store the token and user info in localStorage after successful login
-          window.localStorage.setItem("token", response.token); // Store token in localStorage
-          window.localStorage.setItem("userId", response.user_id); // Optionally store userId if needed
+         
+          window.localStorage.setItem("token", response.token); 
+          window.localStorage.setItem("userId", response.user_id); 
 
-          // Update the auth state using the useAuth hook (assuming setAuth is available)
           setAuth({
             token: response.token,
           });
 
-          // Navigate to the homepage or a protected page
           navigate("/");
         })
         .catch((error) => {
           console.error("Login error:", error);
-          // Handle the error (e.g., show an error message to the user)
         });
     }
   };

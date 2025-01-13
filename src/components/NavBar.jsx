@@ -4,12 +4,12 @@ import "./NavBar.css";
 
 function NavBar() {
   const { auth, setAuth } = useAuth();
-  const navigate = useNavigate(); // For navigation after logout
+  const navigate = useNavigate(); 
 
   const handleLogout = () => {
     window.localStorage.removeItem("token");
     setAuth({ token: null });
-    navigate("/login"); // Redirect to login page after logout
+    navigate("/login"); 
   };
 
   return (
