@@ -18,6 +18,13 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  font-family: "inknut antique", serif;
+  font-size: 26px;
+  color: #617457;
+  text-align: center;
+}
+
 p {
   font-family: "inknut antiqua", serif;
   font-size: 18px;
