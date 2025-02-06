@@ -1,26 +1,4 @@
-form,
-form input,
-form textarea,
-form select,
-form button {
-  border: none;  
-  outline: none; 
-  box-shadow: none; 
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgba(249, 245, 235, 0.9); 
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-  box-sizing: border-box;
-}
-
+/* General form input, textarea, and select styling */
 form input,
 form textarea,
 form select {
@@ -30,9 +8,28 @@ form select {
   font-size: 16px;
   margin-top: 5px;
   box-sizing: border-box;
-  border: 2px solid #ccc;  
+  border: 2px solid #617457; 
+  background-color: white 
 }
 
+form input:-webkit-autofill,
+form textarea:-webkit-autofill,
+form select:-webkit-autofill {
+  background-color: white !important; 
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important; 
+  box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/* Focus state styling */
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border: 2px solid #617457;
+  outline: none;
+  background-color: white !important; 
+}
+
+/* Button styling */
 form button {
   background-color: #617457;
   color: white;
@@ -51,13 +48,21 @@ form button:hover {
   background-color: #506340;
 }
 
-form input:focus,
-form textarea:focus,
-form select:focus {
-  border: 2px solid #617457; 
-  outline: none;
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(249, 245, 235, 0.9); 
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  box-sizing: border-box;
 }
 
+/* Label styling */
 form label {
   font-size: 16px;
   color: #333;
@@ -66,6 +71,7 @@ form label {
   text-align: left;
 }
 
+/* Container styling */
 .newproject-container, .contact-container {
   background-image: url("../images/background-2.jpg"); 
   background-size: cover;
@@ -77,6 +83,7 @@ form label {
   text-align: center;
 }
 
+/* Heading styling */
 .newproject-container h1,
 .contact-container h1 {
   font-size: 36px;  
@@ -86,6 +93,7 @@ form label {
   text-align: center;
 }
 
+/* Padding for containers */
 .newproject-container {
   padding: 40px 0;
 }
@@ -93,3 +101,4 @@ form label {
 .contact-container {
   padding: 40px 0;
 }
+

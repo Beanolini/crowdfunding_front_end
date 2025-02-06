@@ -4,13 +4,8 @@ form {
   align-items: stretch;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  background-color: rgba(
-    249,
-    245,
-    235,
-    0.9
-  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(249, 245, 235, 0.9);
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -37,6 +32,12 @@ form input {
   font-size: 16px;
   margin-top: 5px;
   box-sizing: border-box;
+}
+
+/* Custom styles for username and password inputs */
+form input[type="text"], form input[type="password"] {
+  background-color: yellow !important;
+  border: 2px solid #617457; /* Keep border color consistent */
 }
 
 form button {

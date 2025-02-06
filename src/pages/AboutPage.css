@@ -1,15 +1,16 @@
-.header-box {
-  border: 5px solid #617457; 
-  border-radius: 15px; 
-  padding: 20px; 
-  margin: 20px auto;
-  max-width: 800px; 
-  background-color: #f9f5eb; 
-  position: relative; 
-  text-align: center; 
+/* Target the about-page class, so these styles only apply inside AboutPage */
+.about-page .header-box {
+  border: 5px solid #617457;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 100px auto;
+  max-width: 800px;
+  background-color: #f9f5eb;
+  position: relative;
+  text-align: center;
 }
 
-h1 {
+.about-page h1 {
   font-family: "inknut antiqua", serif;
   font-size: 36px;
   font-weight: bold;
@@ -18,10 +19,11 @@ h1 {
   margin-bottom: 20px;
 }
 
-p {
+.about-page p {
   font-family: "inknut antiqua", serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #f2a879;
   text-align: center;
   margin-bottom: 30px;
 }
+

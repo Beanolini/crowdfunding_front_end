@@ -4,15 +4,28 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Fixed to ensure the image stays in place */
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  margin-top: 80px;
+  height: 100%;  /* Ensures the container takes full height */
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .signup-form-container {
   border: 5px solid #617457;
   border-radius: 15px;
-  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin: 20px auto;
-  max-width: 800px;
+  width: 80%;  /* Set the width to 90% of the parent container */
+  max-width: 600px;  /* Increase max-width to allow the form to be wider */
   background-color: #f9f5eb;
   position: relative;
   text-align: center;
@@ -21,25 +34,16 @@ body {
   box-sizing: border-box;
 }
 
-.signup-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 0 20px;
-  box-sizing: border-box;
-  background-color: #f5f5f5; 
-}
-
 .signup-form-container h1 {
-  font-size: 36px; 
-  color: #617457; 
+  font-size: 36px;
+  color: #617457;
   margin-bottom: 20px;
   text-align: center;
-  font-family: "inknut antiqua", serif; 
-  font-weight: bold; 
+  font-family: "inknut antiqua", serif;
+  font-weight: bold;
 }
 
+/* Form styling */
 form {
   display: flex;
   flex-direction: column;
@@ -65,14 +69,30 @@ form label {
   display: block;
 }
 
-form input {
+/* More specific selector for input inside .signup-form-container */
+.signup-form-container form input {
   width: 100%;
   padding: 12px;
-  border: 2px solid #ccc;
+  border: 2px solid #617457;
   border-radius: 8px;
   font-size: 16px;
   margin-top: 5px;
   box-sizing: border-box;
+  background-color: white; /* Ensures the background stays white */
+}
+
+/* Styling for autofilled inputs */
+.signup-form-container form input:-webkit-autofill {
+  background-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important; /* Prevent shadow on autofill */
+  box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/* Styling for focused inputs (when clicked) */
+.signup-form-container form input:focus {
+  border-color: #617457; /* Keep the border color */
+  outline: none;
+  background-color: white !important; /* Ensure the background stays white even when focused */
 }
 
 form button {
@@ -91,4 +111,11 @@ form button {
 
 form button:hover {
   background-color: #506340;
+}
+
+@media (max-width: 768px) {
+  .signup-form-container {
+    max-width: 100%;
+    padding: 15px;
+  }
 }

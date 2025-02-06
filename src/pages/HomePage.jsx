@@ -4,7 +4,9 @@ import "./HomePage.css";
 
 function HomePage() {
   return (
-    <div>
+    <div className="home-page">
+      {" "}
+      {/* Added home-page class here */}
       <div className="header-box">
         <h1>Help a Halfling</h1>
         <p>Little Folk. Big Dreams.</p>
@@ -14,7 +16,6 @@ function HomePage() {
           className="nav-icon"
         />
       </div>
-
       <div id="project-list">
         {allProjects.map((projectData, key) => (
           <ProjectCard key={key} projectData={projectData} />

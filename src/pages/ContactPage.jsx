@@ -6,8 +6,11 @@ function ContactPage() {
     <div className="header-box">
       <h1>Contact Us</h1>
       <p>
-        Have any questions or need support? We're here to help! Please fill out
-        the form below, and we'll get back to you as soon as possible.
+        Have any questions or need support? We're here to help!
+        <br />
+        <br />
+        Please fill out the form below, and we'll get back to you as soon as
+        possible.
       </p>
       {/* Contact Form */}
       <form className="contact-form">
