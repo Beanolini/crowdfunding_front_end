@@ -1,21 +1,25 @@
+/* General header-box styling */
 .header-box {
   border: 5px solid #617457;
   border-radius: 15px;
   padding-top: 18px;
   padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 100px auto;
-  max-width: 670px;
+  max-width: 900px;
   background-color: #f9f5eb;
   position: relative;
   text-align: center;
 }
 
+/* Header styling */
 h1 {
   font-family: "inknut antiqua", serif;
   font-size: 36px;
   color: #617457;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -25,20 +29,25 @@ h2 {
   text-align: center;
 }
 
+/* Paragraph styling */
 p {
   font-family: "inknut antiqua", serif;
   font-size: 18px;
   color: #e0a97d;
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 30px;
 }
 
+/* Image styling */
 img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
+/* Form styling */
 form {
   display: flex;
   flex-direction: column;
@@ -46,12 +55,14 @@ form {
   max-width: 600px;
 }
 
+/* Form div styling */
 form div {
   width: 100%;
   margin-bottom: 15px;
   box-sizing: border-box;
 }
 
+/* Label styling */
 form label {
   font-size: 16px;
   color: #617457;
@@ -60,6 +71,7 @@ form label {
   text-align: left;
 }
 
+/* Input, select, and textarea styling */
 .header-box form input,
 .header-box form select,
 .header-box form textarea {  
@@ -71,4 +83,23 @@ form label {
   margin-top: 5px;
   box-sizing: border-box;
   background-color: white !important;  /* Force white background */
+}
+
+/* Align checkbox and label inline */
+.header-box form .checkbox-container {
+  display: flex;        /* Align items in a row */
+  align-items: center;  /* Vertically center the checkbox and label */
+  margin-bottom: 15px;  /* Space below the checkbox */
+}
+
+.header-box form .checkbox-container input[type="checkbox"] {
+  margin-right: 10px;   /* Space between checkbox and label */
+  width: auto;          /* Ensure checkbox size is not stretched */
+}
+
+.header-box form .checkbox-container label {
+  font-size: 16px;      /* Same font size as label in form */
+  color: #617457;       /* Label color */
+  margin-bottom: 0;     /* No margin at the bottom of the label */
+  text-align: left;     /* Align the label text to the left */
 }

@@ -5,16 +5,14 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <div className="home-page">
-      {" "}
-      {/* Added home-page class here */}
       <div className="header-box">
         <h1>Help a Halfling</h1>
-        <p>Little Folk. Big Dreams.</p>
         <img
           src="/images/icon-dreams.png"
           alt="Big Dreams Icon"
           className="nav-icon"
         />
+        <p>Little Folk. Big Dreams.</p>
       </div>
       <div id="project-list">
         {allProjects.map((projectData, key) => (

@@ -45,7 +45,7 @@ function NewProjectForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="title">Title:</label>
+        <label htmlFor="title">Title</label>
         <input
           type="text"
           id="title"
@@ -54,7 +54,7 @@ function NewProjectForm() {
         />
       </div>
       <div>
-        <label htmlFor="description">Description:</label>
+        <label htmlFor="description">Description</label>
         <input
           type="text"
           id="description"
@@ -63,7 +63,7 @@ function NewProjectForm() {
         />
       </div>
       <div>
-        <label htmlFor="goal">Goal:</label>
+        <label htmlFor="goal">Goal</label>
         <input
           type="number"
           id="goal"
@@ -72,7 +72,7 @@ function NewProjectForm() {
         />
       </div>
       <div>
-        <label htmlFor="image">Image:</label>
+        <label htmlFor="image">Image</label>
         <input
           type="url"
           id="image"

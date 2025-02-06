@@ -20,9 +20,12 @@
 /* Keep the project-list grid styling as is */
 .home-page #project-list {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  column-gap: 10px;
-  row-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a responsive grid */
+  gap: 20px;  /* Space between the cards */
+  justify-items: center;  /* Center the cards horizontally */
+  align-items: center;  /* Align the cards vertically (if needed) */
+  margin-top: 60px;  /* Add space above the project cards */
+  margin-bottom: 40px;  /* Add space below the project cards */
   font-family: "inknut antiqua", serif;
 }
 
@@ -40,7 +43,7 @@
   font-weight: bold;
   color: #617457;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .home-page p {
@@ -48,41 +51,58 @@
   font-size: 20px;
   color: #e0a97d;
   text-align: center;
-  margin-bottom: 18px;
+  margin-top: 0px;
 }
 
-/* Center the header-box */
 .home-page .header-box {
   border: 5px solid #617457;
   border-radius: 15px;
   padding: 20px;
-  margin-top: 58px;  /* Add margin-top if needed for spacing from the top */
-  margin-bottom: 40px;  /* Add margin-bottom for spacing after the header box */
-  max-width: 550px;
+  margin-top: 58px;
+  margin-bottom: 40px;
+  max-width: 600px;  /* Increased width for a more spacious feel */
   background-color: #f9f5eb;
   position: relative;
   text-align: center;
-  width: 100%;  /* Ensure the header-box takes full width up to max-width */
+  width: 100%;
+  display: flex;
+  flex-direction: column;  /* Stack elements vertically */
+  align-items: center;     /* Center the content */
+  gap: 20px;               /* Add space between elements */
 }
 
-/* Header-box pseudo elements */
-.home-page .header-box::before {
-  left: 10px;
-}
-
-.home-page .header-box::after {
-  right: 10px;
-}
-
-/* Nav icon styling inside header-box */
 .home-page .header-box .nav-icon {
-  width: 60px;
-  height: 60px;
-  margin-top: 7px;
-  margin-bottom: 15px;
+  width: 80px;            /* Slightly larger icon */
+  height: 80px;
+  margin-top: -20px;
+  margin-bottom: -15px;
   transition: transform 0.2s ease-in-out;
 }
 
 .home-page .header-box .nav-icon:hover {
-  transform: scale(1.2);
+   transform: scale(1.2);
+}
+
+/* Heading style improvements */
+.home-page h1 {
+  font-family: "inknut antiqua", serif;
+  font-size: 40px;         /* Larger heading */
+  font-weight: bold;
+  color: #617457;
+  text-align: center;
+  margin-bottom: 0px;      /* Reduced bottom margin */
+}
+
+/* Adjust paragraph text styling */
+.home-page p {
+  font-family: "inknut antiqua", serif;
+  font-size: 22px;         /* Slightly bigger for emphasis */
+  color: #e0a97d;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* Optional: You could add a subtle text shadow for extra polish */
+.home-page h1, .home-page p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);  /* Light shadow */
 }

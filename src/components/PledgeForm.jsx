@@ -69,7 +69,7 @@ function PledgeForm({ projectId }) {
           {/* Display error message */}
           {/* Amount Field */}
           <div>
-            <label htmlFor="amount">Amount in AUD:</label>
+            <label htmlFor="amount">Amount in AUD</label>
             <input
               type="number"
               id="amount"
@@ -80,18 +80,18 @@ function PledgeForm({ projectId }) {
             />
           </div>
           {/* Anonymous Checkbox */}
-          <div>
-            <label htmlFor="anonymous">Anonymous:</label>
+          <div className="checkbox-container">
             <input
               type="checkbox"
               id="anonymous"
               checked={pledgeDetails.anonymous}
               onChange={handleChange}
             />
+            <label htmlFor="anonymous">Anonymous</label>
           </div>
           {/* Comment Field */}
           <div>
-            <label htmlFor="comment">Comment:</label>
+            <label htmlFor="comment">Comment</label>
             <input
               type="text"
               id="comment"

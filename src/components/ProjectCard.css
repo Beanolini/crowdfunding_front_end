@@ -1,35 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 .project-card {
   width: 100%;
-  border-radius: 15px;
-  box-shadow: none;
+  max-width: 300px;  /* Optional: Limit the max width of the card */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow to create depth */
   text-align: center;
   overflow: hidden;
+  background-color: white;  /* White background to mimic the Polaroid look */
+  padding-bottom: 15px;  /* Space at the bottom to allow room for the caption */
+  transform: rotate(2deg);  /* Slight tilt for a Polaroid effect */
+  transition: transform 0.2s ease-in-out;  /* Smooth transition for the tilt effect */
 }
 
 .project-card img {
   width: 100%;
-  height: 300px;
+  height: 250px;  /* Adjust the height to fit the image */
   object-fit: cover;
-  border-radius: 15px;
+  border-bottom: 10px solid white;  /* White border at the bottom to mimic Polaroid */
+  border-radius: 5px;  /* Rounded corners for the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  /* Add shadow to the image to make it stand out */
 }
 
 .project-card h3 {
-  font-family: "Inknut Antiqua", serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #e39a7b;
+  font-family: 'Indie Flower', cursive; /* Use Indie Flower font */
+  font-size: 22px;
+  font-weight: normal;
+  color: #06402b; /* Text color */
   margin-top: 10px;
   margin-bottom: 10px;
-
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-
-  padding: 10px 15px;
-
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border-radius: 5px;
-
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to make the text stand out */
+  padding: 0; /* Remove padding to remove extra space around the text */
+  background-color: transparent; /* Remove the filled background */
+  color: #06402b; /* Keep the text color */
+  border-radius: 0; /* Remove rounded corners if you want */
   display: inline-block;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+.project-card p {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 14px;
+  color: #617457;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 10px;
+}
+
+.project-card:hover {
+  transform: rotate(4deg);  /* Slightly increase the tilt when hovered */
+}
+
+@media (max-width: 768px) {
+  .home-page #project-list {
+    grid-template-columns: 1fr 1fr;  /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page #project-list {
+    grid-template-columns: 1fr;  /* One card per row on smaller screens */
+  }
 }
