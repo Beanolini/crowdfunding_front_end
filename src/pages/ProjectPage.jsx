@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { allProjects } from "../data";
 import PledgeForm from "../components/PledgeForm";
+import "./ProjectPage.css";
 
 function ProjectPage() {
   const { id } = useParams();
