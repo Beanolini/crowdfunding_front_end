@@ -1,14 +1,38 @@
+import React, { useState, useEffect } from "react";
 import { allProjects } from "../data";
 import ProjectCard from "../components/ProjectCard";
 import "./HomePage.css";
 
 function HomePage() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an async operation (e.g., data fetch) and hide the loader after 2 seconds
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Adjust the time as necessary
+
+    return () => clearTimeout(timer); // Cleanup timeout on component unmount
+  }, []);
+
   return (
     <div className="home-page">
+      {isLoading && (
+        <div className="loading-overlay">
+          <video
+            src="/images/snail-loading-animation.mp4"
+            autoPlay
+            loop
+            muted
+            className="loading-animation"
+          ></video>
+        </div>
+      )}
+
       <div className="header-box">
         <h1>Help a Halfling</h1>
         <img
-          src="/images/icon-sweetdreams.svg"
+          src="/images/icon-dreams.png"
           alt="Big Dreams Icon"
           className="nav-icon"
         />
