@@ -13,8 +13,9 @@ export const allProjects = [
   {
     id: 2,
     title: "Anyas Nightsun",
-    description: "The second project.",
-    goal: 150,
+    description:
+      "The Halfling Invention Fair! Our halfling inventor wants to host the very first Halfling Invention Fair. Think of it like a science fair, but with a focus on hilarious and impractical inventions—like the 'automatic self-peeling potato machine' or 'the horse-drawn coffee machine' that only works in the rain.",
+    goal: 5000,
     image: "/images/halfling-two.jpg",
     is_open: true,
     date_created: "2024-12-15",
@@ -22,9 +23,10 @@ export const allProjects = [
   },
   {
     id: 3,
-    title: "Kasumo Sunmeadow",
-    description: "The third project.",
-    goal: 150,
+    title: "Greebo Lightfoot",
+    description:
+      "The Halfling-Invented Self-Stirring Stew Pot! Our curious halfling inventor dreams of creating the world’s first self-stirring stew pot that magically keeps the soup at the perfect temperature and flavor. It would be the ultimate kitchen gadget, saving hours of stirring for other halflings so they can nap or annoy a friend instead.",
+    goal: 2500,
     image: "/images/halfling-three.jpg",
     is_open: true,
     date_created: "2024-12-15",
@@ -33,8 +35,9 @@ export const allProjects = [
   {
     id: 4,
     title: "Roslyse Nimbleflow",
-    description: "The fourth project.",
-    goal: 150,
+    description:
+      "Halfling Historical Record of the Best Nap Spots! This halfling wants to create the definitive guide to the best nap spots in the kingdom, ranked by softness, quietness, and snack accessibility.",
+    goal: 1000,
     image: "/images/halfling-four.jpg",
     is_open: true,
     date_created: "2024-12-15",
@@ -43,8 +46,9 @@ export const allProjects = [
   {
     id: 5,
     title: "Hanys Teafoot",
-    description: "The fifth project.",
-    goal: 150,
+    description:
+      "Help this Halfling and their Owl Friend Buy a Hot Air Balloon for Their Next Big Adventure! The halfling wants to travel the world with their trusty owl companion, but walking everywhere is taking too long (and the owl is tired of flying). They’ve decided that the best way to see the sights in style is with a hot air balloon, but they need some help making it happen!",
+    goal: 1000,
     image: "/images/halfling-five.jpg",
     is_open: true,
     date_created: "2024-12-15",
@@ -53,8 +57,9 @@ export const allProjects = [
   {
     id: 6,
     title: "Zefara Bronzetopple",
-    description: "The seventh project.",
-    goal: 150,
+    description:
+      "The Frog and Halfling World Tour! This halfling dreams of going on a world tour with their frog friend, performing music in every village, forest, and city. Their act? The halfling plays a tiny lute or flute while the frog croaks melodically in perfect harmony, creating a unique sound that draws crowds wherever they go.",
+    goal: 4000,
     image: "/images/halfling-seven.jpg",
     is_open: true,
     date_created: "2024-12-15",
