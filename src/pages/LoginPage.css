@@ -10,9 +10,12 @@ body {
 .login-form-container {
   border: 5px solid #617457;
   border-radius: 15px;
-  padding: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
+  padding-bottom: 12px;
   margin: 100px auto 20px; /* Adds margin-top of 100px, and centers horizontally */
-  max-width: 670px;
+  max-width: 600px;
   background-color: #f9f5eb;
   position: relative;
   text-align: center;

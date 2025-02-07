@@ -35,8 +35,9 @@ form input {
 }
 
 /* Custom styles for username and password inputs */
-form input[type="text"], form input[type="password"] {
-  background-color: yellow !important;
+form input[type="text"],
+form input[type="password"] {
+  background-color: white !important;
   border: 2px solid #617457; /* Keep border color consistent */
 }
 

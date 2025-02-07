@@ -23,6 +23,8 @@ body {
   border-radius: 15px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 12px;
   margin: 20px auto;
   width: 80%;  /* Set the width to 90% of the parent container */
   max-width: 600px;  /* Increase max-width to allow the form to be wider */
@@ -43,7 +45,6 @@ body {
   font-weight: bold;
 }
 
-/* Form styling */
 form {
   display: flex;
   flex-direction: column;
