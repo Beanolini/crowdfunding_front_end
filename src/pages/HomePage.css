@@ -30,12 +30,12 @@
 }
 
 .home-page #project-list img {
-  width: 300px;
-  height: auto;
-  object-fit: cover;
-  margin-top: 60px;
+  width: 300px;   /* Maintain the image width */
+  height: 280px;
+  object-fit: cover;  /* Ensures the image covers the container */
+  object-position: top;  /* Align the image to the top */
+  margin-top: 30px;
 }
-
 /* Header and text styling */
 .home-page h1 {
   font-family: "inknut antiqua", serif;
@@ -74,8 +74,8 @@
 .home-page .header-box .nav-icon {
   width: 80px;            /* Slightly larger icon */
   height: 80px;
-  margin-top: -8px;
-  margin-bottom: -8px;
+  margin-top: -5px;
+  margin-bottom: -5px;
   color: #06402b;
   transition: transform 0.2s ease-in-out;
 }
@@ -103,16 +103,15 @@
   margin-top: 8px;
 }
 
-/* Optional: You could add a subtle text shadow for extra polish */
-.home-page h1, .home-page p {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);  /* Light shadow */
-}
+/* Optional: You could add a subtle text shadow for extra polish
+/* .home-page h1, .home-page p { */
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);  Light shadow */
 
 .project-card {
   width: 100%; 
   max-width: 300px; /* Limit the max width of each card */
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
   text-align: center;
   overflow: hidden;
   background-color: white;
@@ -128,7 +127,7 @@
   object-position: top;
   border-bottom: 10px solid white; 
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
 }
 
 @media (max-width: 1024px) {
