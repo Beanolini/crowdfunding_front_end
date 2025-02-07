@@ -52,16 +52,6 @@ export const allProjects = [
   },
   {
     id: 6,
-    title: "Greebo Lightfoot",
-    description: "The sixth project.",
-    goal: 150,
-    image: "/images/halfling-six.jpg",
-    is_open: true,
-    date_created: "2024-12-15",
-    owner: 1,
-  },
-  {
-    id: 7,
     title: "Zefara Bronzetopple",
     description: "The seventh project.",
     goal: 150,

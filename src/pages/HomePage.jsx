@@ -8,7 +8,7 @@ function HomePage() {
       <div className="header-box">
         <h1>Help a Halfling</h1>
         <img
-          src="/images/icon-dreams.png"
+          src="/images/icon-sweetdreams.svg"
           alt="Big Dreams Icon"
           className="nav-icon"
         />
