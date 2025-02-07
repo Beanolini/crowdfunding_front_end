@@ -1,10 +1,9 @@
-/* Apply flexbox to the home-page class to center its contents */
 .home-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Centers the content vertically */
-  align-items: center;      /* Centers the content horizontally */
-  min-height: 100vh;        /* Ensures that the content is vertically centered even if there's not enough content */
+  justify-content: center;  
+  align-items: center;     
+  min-height: 100vh;        
 }
 
 /* Keep the body background styling as is */

@@ -33,6 +33,11 @@ function ProjectPage() {
         <strong>Created on: </strong>
         {new Date(project.date_created).toLocaleDateString()}
       </p>
+      <img
+        src="/images/icon-divider.svg"
+        alt="divider"
+        className="icon-divider"
+      />
       <h2>Make a Pledge</h2>
       <PledgeForm projectId={project.id} />
     </div>

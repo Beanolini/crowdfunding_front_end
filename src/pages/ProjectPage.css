@@ -99,7 +99,7 @@ form label {
 }
 
 .header-box form .checkbox-container label {
-  font-size: 16px;      /* Same font size as label in form */
+  font-size: 18px;      /* Same font size as label in form */
   color: #617457;       /* Label color */
   margin-bottom: 0;     /* No margin at the bottom of the label */
   text-align: left;     /* Align the label text to the left */
