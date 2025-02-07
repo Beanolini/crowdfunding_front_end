@@ -25,6 +25,10 @@ p {
   margin-bottom: 10px; 
 }
 
+.icon {
+  font-size: 50px;  /* Increase the size of the icon */
+}
+
 form {
   display: flex;
   flex-direction: column;

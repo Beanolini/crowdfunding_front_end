@@ -8,10 +8,14 @@ function ContactPage() {
       <p>
         Have any questions or need support? We're here to help!
         <br />
-        <br />
         Please fill out the form below, and we'll get back to you as soon as
         possible.
       </p>
+      <img
+        src="/images/icon-divider.svg"
+        alt="divider"
+        className="icon-divider"
+      />
       {/* Contact Form */}
       <form className="contact-form">
         <div className="form-group">

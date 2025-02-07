@@ -6,7 +6,11 @@ function NewProjectPage() {
     <div>
       <div className="header-box">
         <h1>Create a New Project</h1>
-        {/* Removed the icon image */}
+        <img
+          src="/images/icon-divider.svg"
+          alt="divider"
+          className="icon-divider"
+        />
         <NewProjectForm />
       </div>
     </div>

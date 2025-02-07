@@ -2,7 +2,8 @@
 .about-page .header-box {
   border: 5px solid #617457;
   border-radius: 15px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   margin: 100px auto;
   max-width: 800px;
   background-color: #f9f5eb;
@@ -24,6 +25,9 @@
   font-size: 20px;
   color: #8c653d;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
+.about-page .icon {
+  font-size: 50px; 
+}
