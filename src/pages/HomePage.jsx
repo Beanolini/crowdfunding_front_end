@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { allProjects } from "../data";
+// import { allProjects } from "../data";
+import useProjects from "../hooks/use-projects";
 import ProjectCard from "../components/ProjectCard";
 import "./HomePage.css";
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
+  const { projects } = useProjects();
 
   useEffect(() => {
     // Simulate an async operation (e.g., data fetch) and hide the loader after 2 seconds
@@ -27,7 +29,7 @@ function HomePage() {
         <p>Little Folk. Big Dreams.</p>
       </div>
       <div id="project-list">
-        {allProjects.map((projectData, key) => (
+        {projects.map((projectData, key) => (
           <ProjectCard key={key} projectData={projectData} />
         ))}
       </div>
