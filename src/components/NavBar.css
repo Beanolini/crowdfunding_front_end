@@ -1,3 +1,4 @@
+/* General reset and body styles */
 div {
   font-family: "Inknut Antiqua", "Handgloves", serif; 
   margin: 0;
@@ -10,11 +11,13 @@ nav {
   padding: 15px 25px;
   margin: 40px 0;
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-between; /* Adjust for burger icon */
   align-items: center; 
   border-radius: 10px; 
+  position: relative;
 }
 
+/* Nav links */
 nav a {
   color: #617457;
   text-decoration: none; 
@@ -40,15 +43,73 @@ nav a {
 
 nav a:hover {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.2
-  ); 
+  background-color: rgba(0, 0, 0, 0.2); 
   transform: scale(1.05); 
 }
 
 nav a:active {
   background-color: #444; 
+}
+
+/* Burger icon styling */
+.burger-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.burger-icon span {
+  width: 100%;
+  height: 4px;
+  background-color: #617457;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  /* Hide the nav links on small screens */
+  nav a {
+    display: none;
+  }
+
+  /* Show the burger icon */
+  .burger-icon {
+    display: flex;
+  }
+
+  /* When burger menu is open, show the links */
+  nav.open a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #ffd3ac;
+  }
+
+  /* Additional styling for better layout in burger menu mode */
+  nav.open {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center; /* Align items to the left when in burger mode */
+  }
+}
+
+/* Optional: Add transition for nav links when opening */
+nav.open .burger-icon span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+nav.open .burger-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+nav.open .burger-icon span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
 }
