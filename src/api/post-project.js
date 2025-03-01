@@ -5,7 +5,7 @@ async function postProject(title, description, goal, image) {
   const response = await fetch(url, {
     method: "POST", 
     headers: {
-      Authorization: `Token ${token}`,
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
       title: title,
