@@ -3,9 +3,10 @@ async function postProject(title, description, goal, image) {
   const userId = window.localStorage.getItem("userId");
   const url = `${import.meta.env.VITE_API_URL}/projects/`;
   const response = await fetch(url, {
-    method: "POST", 
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
+      Authorization: `Token ${token}`,
     },
     body: JSON.stringify({
       title: title,
