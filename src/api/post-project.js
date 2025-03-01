@@ -1,12 +1,11 @@
 async function postProject(title, description, goal, image) {
-  const userId = window.localStorage.getItem("userId"); // Still retrieve the userId if necessary
+  const userId = window.localStorage.getItem("userId"); 
   const url = `${import.meta.env.VITE_API_URL}/projects/`;
 
   const response = await fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      // Removed the Authorization header
     },
     body: JSON.stringify({
       title: title,
@@ -14,7 +13,7 @@ async function postProject(title, description, goal, image) {
       goal: goal,
       image: image,
       is_open: true,
-      owner: userId, // UserId still included in the body if necessary
+      owner: userId, 
     }),
   });
 
